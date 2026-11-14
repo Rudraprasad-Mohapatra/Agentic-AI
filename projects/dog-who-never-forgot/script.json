@@ -1,81 +1,67 @@
 {
   "title": "The Dog Who Never Forgot",
   "voice_hindi": "hi-IN-MadhurNeural",
-  "speed": 1.0,
-  "lead": 0.4,
-  "outro": 1.5,
-  "gap": 0.28,
+  "pitch_hindi": "-8Hz",
+  "speed": 1.05,
+  "lead": 0.35,
+  "outro": 1.6,
+  "gap": 0.25,
   "music": "sentimental",
   "lines": [
     {
-      "text": "Ek gareeb aadmi ke paas khud khane ke paise nahi the...",
-      "voice_text": "एक गरीब आदमी के पास खुद खाने के पैसे नहीं थे...",
+      "text": "Ek gareeb aadmi ke paas, khud khane ke paise nahi the...",
+      "voice_text": "एक गरीब आदमी के पास, खुद खाने के पैसे नहीं थे...",
       "caps": "A poor man | barely had enough | to feed himself..."
     },
     {
-      "text": "phir bhi woh roz ek bhookhe kutte ko apni roti khilata tha.",
-      "voice_text": "फिर भी वो रोज़ एक भूखे कुत्ते को अपनी रोटी खिलाता था।",
-      "caps": "Yet every day, | he shared his only meal | with a starving street dog."
+      "text": "phir bhi woh roz ek bhookhe kutte ko apni roti khilata.",
+      "voice_text": "फिर भी वो रोज़ एक भूखे कुत्ते को अपनी रोटी खिलाता।",
+      "caps": "Yet every single day, | he shared his only meal | with a starving street dog."
     },
     {
-      "text": "Dheere-dheere, woh kutta us aadmi ka sabse sachha dost ban gaya.",
-      "voice_text": "धीरे-धीरे, वो कुत्ता उस आदमी का सबसे सच्चा दोस्त बन गया।",
-      "caps": "Over time, | that street dog | became his dearest friend."
+      "text": "Dheere-dheere, woh laachar kutta us aadmi ka sabse sachha dost ban gaya.",
+      "voice_text": "धीरे-धीरे, वो लाचार कुत्ता उस आदमी का सबसे सच्चा दोस्त बन गया।",
+      "caps": "Over time, | that street dog became | his most devoted companion."
     },
     {
-      "text": "Aadmi jahan bhi jaata, kutta uske peeche-peeche jaata tha.",
-      "voice_text": "आदमी जहाँ भी जाता, कुत्ता उसके पीछे-पीछे जाता था।",
-      "caps": "Wherever the man walked, | the dog followed | right by his side."
+      "text": "Aadmi jahan bhi jaata... kutta hamesha uske peeche-peeche chalta.",
+      "voice_text": "आदमी जहाँ भी जाता... कुत्ता हमेशा उसके पीछे-पीछे चलता।",
+      "caps": "Wherever the man walked... | the loyal dog followed | like a devoted shadow."
     },
     {
-      "text": "Lekin ek andheri raat, aadmi jungle ke raaste ghar laut raha tha.",
-      "voice_text": "लेकिन एक अंधेरी रात, आदमी जंगल के रास्ते घर लौट रहा था।",
-      "caps": "Then one dark night, | he was walking home | through the dense forest."
+      "text": "Phir ek toofani raat, jungle ke raaste ghar lautte hue... achanak uska pair phisla!",
+      "voice_text": "फिर एक तूफ़ानी रात, जंगल के रास्ते घर लौटते हुए... अचानक उसका पैर फिसला!",
+      "caps": "Then one stormy night | walking through the forest... | his foot suddenly slipped!"
     },
     {
-      "text": "Achanak uska pair phisla, aur woh ek gehri khaai mein gir gaya!",
-      "voice_text": "अचानक उसका पैर फिसला, और वो एक गहरी खाई में गिर गया!",
-      "caps": "Suddenly his foot slipped, | tumbling down | into a deep, steep ravine!"
+      "text": "Woh ek gehri khaai mein ja gira! Ghayal hokar chillaya, par sunne wala koi nahi tha.",
+      "voice_text": "वो एक गहरी खाई में जा गिरा! घायल होकर चिल्लाया, पर सुनने वाला कोई नहीं था।",
+      "caps": "Plunging into a deep ravine! | Injured and trapped, | no one could hear his cries."
     },
     {
-      "text": "Woh dard se chillaya, lekin jungle mein uski awaaz sunne wala koi nahi tha.",
-      "voice_text": "वो दर्द से चिल्लाया, लेकिन जंगल में उसकी आवाज़ सुनने वाला कोई नहीं था।",
-      "caps": "Injured and trapped, | he cried for help... | but no one could hear."
+      "text": "Lekin woh wafadaar kutta bhaaga, aur raat ke sannate mein gaon pahuncha.",
+      "voice_text": "लेकिन वो वफ़ादार कुत्ता भागा, और रात के सन्नाटे में गाँव पहुँचा।",
+      "caps": "Except his faithful dog | sprinted into the night, | racing to the village."
     },
     {
-      "text": "Lekin uska wafadaar kutta himmat haarne wala nahi tha.",
-      "voice_text": "लेकिन उसका वफ़ादार कुत्ता हिम्मत हारने वाला नहीं था।",
-      "caps": "Except his faithful dog | refused | to leave him behind."
+      "text": "Woh zor-zor se bhonk-kar, gaon walon ko apne peeche kheench laaya!",
+      "voice_text": "वो ज़ोर-ज़ोर से भौंककर, गाँव वालों को अपने पीछे खींच लाया!",
+      "caps": "Barking frantically, | tugging at their clothes, | guiding villagers back to the cliff!"
     },
     {
-      "text": "Kutta poori taaqat se bhaagkar paas ke gaon pahucha.",
-      "voice_text": "कुत्ता पूरी ताक़त से भागकर पास के गाँव पहुँचा।",
-      "caps": "The dog sprinted | through the darkness, | racing toward the village."
+      "text": "Gaon walon ne rassi daalkar us aadmi ko sahi-salamat bacha liya.",
+      "voice_text": "गाँव वालों ने रस्सी डालकर उस आदमी को सही-सलामत बचा लिया।",
+      "caps": "Lowering ropes with torches, | the villagers | pulled him back to safety."
     },
     {
-      "text": "Woh zor-zor se bhonkne laga, aur logon ko kheenchkar jungle ki taraf le gaya.",
-      "voice_text": "वो ज़ोर-ज़ोर से भौंकने लगा, और लोगों को खींचकर जंगल की तरफ ले गया।",
-      "caps": "Barking frantically, | tugging at their clothes, | leading the villagers back."
+      "text": "Aadmi ne kutte ko seene se lagakar rote hue kaha: Maine tujhe roti di thi, tune mujhe meri zindagi lauta di.",
+      "voice_text": "आदमी ने कुत्ते को सीने से लगाकर रोते हुए कहा: मैंने तुझे रोटी दी थी, तूने मुझे मेरी ज़िंदगी लौटा दी।",
+      "caps": "Tears in his eyes, he held the dog close: | 'I only gave you bread... | but you gave me back my life.'"
     },
     {
-      "text": "Gaon walon ne rassi daalkar us aadmi ko sahi salamat bacha liya.",
-      "voice_text": "गाँव वालों ने रस्सी डालकर उस आदमी को सही सलामत बचा लिया।",
-      "caps": "With torches and ropes, | the villagers | pulled him back to safety."
-    },
-    {
-      "text": "Aadmi ne rote hue kutte ko seene se laga liya aur kaha...",
-      "voice_text": "आदमी ने रोते हुए कुत्ते को सीने से लगा लिया और कहा...",
-      "caps": "Tears filling his eyes, | he held the dog close | and whispered..."
-    },
-    {
-      "text": "Maine tujhe ek roti di thi, aur tune mujhe meri zindagi lauta di.",
-      "voice_text": "मैंने तुझे सिर्फ़ एक रोटी दी थी, और तूने मुझे मेरी ज़िंदगी लौटा दी।",
-      "caps": "'I gave you a piece of bread... | and you gave me back my life.'"
-    },
-    {
-      "text": "NEXORA. Neki kabhi bhulayi nahi jaati.",
-      "voice_text": "नेक्सोरा। नेकी कभी भुलाई नहीं जाती।",
-      "caps": "NEXORA | Kindness | is never forgotten.",
+      "text": "Insaaniyat aur neki... kabhi bhulayi nahi jaati.",
+      "voice_text": "इंसानियत और नेकी... कभी भुलाई नहीं जाती।",
+      "caps": "Kindness | is never | forgotten.",
       "gap": 0.4
     }
   ]

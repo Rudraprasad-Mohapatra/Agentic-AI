@@ -5,7 +5,7 @@ import { W, H, setCtx, ctx, clamp } from './core/lib.js';
 import { T, loadTiming } from './core/timing.js';
 import { buildCaptions, drawCaption, captionList } from './core/captions.js';
 import { makeEngine, RES, AA } from './core/engine.js';
-import { buildShots } from './shots.js';
+import { buildShots, logoImg } from './shots.js';
 
 const cv = document.getElementById('cv'), GL = document.getElementById('gl');
 setCtx(cv.getContext('2d'));
@@ -27,6 +27,9 @@ function draw(t) {
 (async () => {
   try {
     await document.fonts.load('900 100px Inter'); await document.fonts.load('800 100px Inter');
+    if (logoImg.decode) {
+      try { await logoImg.decode(); } catch (e) {}
+    }
     const script = await (await fetch('script.json', { cache: 'no-store' })).json();
     await loadTiming();
     buildCaptions(script);

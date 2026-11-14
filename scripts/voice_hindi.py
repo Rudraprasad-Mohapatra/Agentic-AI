@@ -1,5 +1,5 @@
-"""Generate Hindi audio using edge-tts (hi-IN-MadhurNeural or hi-IN-SwaraNeural).
-Produces data/narration.wav (24 kHz mono) and data/lines.json.
+"""Generate Hindi audio using edge-tts (hi-IN-MadhurNeural with broadcast vocal mastering).
+Produces data/narration.wav (24 kHz mono) and data/lines.json with rich wise-man voice timbre.
 
 Usage:
   bash scripts/py scripts/voice_hindi.py projects/dog-who-never-forgot
@@ -21,15 +21,28 @@ def trim(x, thr=0.008):
     b = min(len(x), idx[-1] + int(0.03 * SR))
     return x[a:b]
 
-async def synth_line(text, voice, rate_str):
-    comm = edge_tts.Communicate(text, voice, rate=rate_str)
+async def synth_line(text, voice, rate_str="-5%", pitch_str="-8Hz"):
+    comm = edge_tts.Communicate(text, voice, rate=rate_str, pitch=pitch_str)
     with tempfile.NamedTemporaryFile(suffix=".mp3", delete=False) as tf:
         tmp_name = tf.name
     try:
         await comm.save(tmp_name)
-        # Decode to 24000 Hz 1-channel raw PCM float32 with ffmpeg
+        # Apply broadcast voice mastering chain:
+        # - Highpass 75Hz (removes low-end rumble)
+        # - Bass boost at 125Hz (+5.5 dB) for deep chest resonance & warm base tone
+        # - Presence equalizer at 3200Hz (+3.5 dB) for crystal-clear clarity
+        # - Gentle high smoothing
+        # - Studio dynamic compressor for polished vocal presence
+        af_filter = (
+            "highpass=f=75,"
+            "bass=g=5.5:f=125:w=0.7,"
+            "equalizer=f=3200:t=q:w=1.2:g=3.5,"
+            "treble=g=-0.5:f=8000,"
+            "acompressor=threshold=-16dB:ratio=3.5:attack=5:release=50:makeup=3.5"
+        )
         proc = subprocess.run([
             "ffmpeg", "-v", "error", "-y", "-i", tmp_name,
+            "-af", af_filter,
             "-ar", str(SR), "-ac", "1", "-f", "f32le", "-"
         ], capture_output=True, check=True)
         samples = np.frombuffer(proc.stdout, dtype=np.float32)
@@ -38,14 +51,15 @@ async def synth_line(text, voice, rate_str):
         if os.path.exists(tmp_name):
             os.remove(tmp_name)
 
-async def run(project_dir, voice_override=None, speed=1.0):
+async def run(project_dir, voice_override=None, speed=0.95):
     P = Path(project_dir)
     S = json.loads((P / "script.json").read_text(encoding="utf-8"))
     voice = voice_override or S.get("voice_hindi", DEFAULT_VOICE)
+    pitch = S.get("pitch_hindi", "-8Hz")
     rate_pct = int((speed - 1.0) * 100)
     rate_str = f"{'+' if rate_pct >= 0 else ''}{rate_pct}%"
 
-    print(f"Synthesizing Hindi audio with voice '{voice}' (rate {rate_str})...")
+    print(f"Synthesizing Hindi audio with voice '{voice}' (rate {rate_str}, pitch {pitch})...")
 
     lead_s = float(S.get("lead", 0.4))
     lead = np.zeros(int(lead_s * SR), dtype=np.float32)
@@ -56,7 +70,7 @@ async def run(project_dir, voice_override=None, speed=1.0):
     for i, ln in enumerate(S["lines"]):
         text = ln.get("voice_text") or ln["text"]
         print(f"[{i:2d}] {text}")
-        audio = await synth_line(text, voice, rate_str)
+        audio = await synth_line(text, voice, rate_str=rate_str, pitch_str=pitch)
         dur = len(audio) / SR
         start_t = cur_t
         end_t = cur_t + dur
@@ -81,7 +95,7 @@ async def run(project_dir, voice_override=None, speed=1.0):
     y = np.concatenate(out_chunks)
     max_val = np.abs(y).max()
     if max_val > 0:
-        y = y / max_val * 0.92
+        y = y / max_val * 0.94
 
     (P / "data").mkdir(exist_ok=True)
     wav_path = P / "data" / "narration.wav"
@@ -131,7 +145,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("project")
     parser.add_argument("--voice")
-    parser.add_argument("--speed", type=float, default=1.0)
+    parser.add_argument("--speed", type=float, default=0.95)
     args = parser.parse_args()
     asyncio.run(run(args.project, args.voice, args.speed))
 
