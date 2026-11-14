@@ -1,0 +1,30 @@
+{
+  "title": "The Man Who Bought A Bank For $1",
+  "voice": "am_michael",
+  "speed": 1.05,
+  "lead": 0.25,
+  "outro": 0.8,
+  "gap": 0.18,
+  "music": "bounce",
+  "sources": [
+    "Chicago Tribune, 'Stony Island Arts Bank' (Theaster Gates bought the abandoned 1923 bank for $1 from the city in 2012)",
+    "The Guardian, 'Theaster Gates: the artist who bought a Chicago bank for $1' (City faced $1M demolition cost)",
+    "Architectural Digest, 'How Theaster Gates Turned an Old Bank into an Art Mecca' (Funded renovation by selling marble bathroom slabs as bank bonds for $5,000 each at Art Basel)"
+  ],
+  "lines": [
+    { "text": "In twenty twelve, a man bought an entire bank", "caps": "In twenty twelve, | a man | bought | an entire bank" },
+    { "text": "for one single dollar.", "caps": "for one | single dollar." },
+    { "text": "Chicago was going to pay a million bucks", "caps": "Chicago | was going | to pay | a million bucks" },
+    { "text": "just to tear the decaying building down,", "caps": "just to tear | the decaying | building down," },
+    { "text": "so an artist named Theaster offered them a single dollar instead.", "caps": "so an artist | named Theaster | offered them | a single dollar | instead." },
+    { "text": "The city handed him the keys,", "caps": "The city | handed him | the keys," },
+    { "text": "but every banker refused to give him a renovation loan.", "caps": "but every banker | refused | to give him | a loan." },
+    { "text": "So Theaster walked into the ruined bathrooms,", "caps": "So Theaster | walked into | the ruined | bathrooms," },
+    { "text": "ripped the marble slabs off the walls,", "caps": "ripped | the marble slabs | off the walls," },
+    { "text": "and carved them into luxury art pieces.", "caps": "and carved them | into luxury | art pieces." },
+    { "text": "He sold each piece to collectors for five grand,", "caps": "He sold | each piece | to collectors | for five grand," },
+    { "text": "raising millions to rebuild the entire palace", "caps": "raising | millions | to rebuild | the entire palace" },
+    { "text": "using the building's own trash.", "caps": "using | the building's | own trash." },
+    { "text": "Which is why nobody can believe that", "caps": "Which is why | nobody | can believe that", "gap": 0.25 }
+  ]
+}
