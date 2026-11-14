@@ -44,13 +44,14 @@ export const WalkingRoadScene: React.FC<WalkingRoadSceneProps> = ({
     return list;
   }, [roadLength, roadWidth]);
 
-  // Generate roadside trees for rich depth parallax
+  // Generate roadside trees for rich depth parallax (inner & outer rows for widescreen 16:9 coverage)
   const trees = useMemo(() => {
     const list: { x: number; z: number; scale: number; col: string }[] = [];
     const colors = ['#15803D', '#166534', '#14532D', '#1E3A8A'];
     for (let z = 18; z > -roadLength; z -= 8) {
       const scaleL = 0.85 + (Math.sin(z * 1.3) + 1) * 0.25;
       const scaleR = 0.85 + (Math.cos(z * 1.7) + 1) * 0.25;
+      // Primary roadside row
       list.push({
         x: -(roadWidth / 2 + sidewalkWidth + 1.2 + Math.abs(Math.sin(z)) * 1.5),
         z,
@@ -62,6 +63,19 @@ export const WalkingRoadScene: React.FC<WalkingRoadSceneProps> = ({
         z: z - 3.5,
         scale: scaleR,
         col: colors[Math.abs(Math.round(z + 1)) % colors.length],
+      });
+      // Outer background row for expansive 16:9 landscape vista
+      list.push({
+        x: -(roadWidth / 2 + sidewalkWidth + 7.5 + Math.abs(Math.cos(z * 0.8)) * 2.5),
+        z: z - 4.0,
+        scale: scaleL * 1.25,
+        col: colors[Math.abs(Math.round(z + 2)) % colors.length],
+      });
+      list.push({
+        x: roadWidth / 2 + sidewalkWidth + 7.5 + Math.abs(Math.sin(z * 0.8)) * 2.5,
+        z: z - 1.0,
+        scale: scaleR * 1.25,
+        col: colors[Math.abs(Math.round(z + 3)) % colors.length],
       });
     }
     return list;
@@ -96,6 +110,19 @@ export const WalkingRoadScene: React.FC<WalkingRoadSceneProps> = ({
 
       {/* ══════════ 3D ROAD & ENVIRONMENT ══════════ */}
       
+      {/* 0. Wide Ground Terrain Plane (Seamless 16:9 widescreen horizon) */}
+      <mesh
+        receiveShadow
+        position={[0, -0.02, -roadLength / 2 + 10]}
+        rotation={[-Math.PI / 2, 0, 0]}
+      >
+        <planeGeometry args={[180, roadLength + 60]} />
+        <meshStandardMaterial
+          color="#0A101D"
+          roughness={0.96}
+        />
+      </mesh>
+
       {/* 1. Asphalt Road Surface */}
       <mesh
         receiveShadow
@@ -237,9 +264,9 @@ export const WalkingRoadScene: React.FC<WalkingRoadSceneProps> = ({
         </group>
       ))}
 
-      {/* 8. Distant City Skyline Silhouettes */}
+      {/* 8. Distant Panoramic City Skyline Silhouettes (Spans 160m for 16:9 vista) */}
       <group position={[0, 0, -roadLength + 15]}>
-        {[-35, -24, -14, -4, 6, 16, 26, 38].map((x, i) => {
+        {[-72, -58, -46, -35, -24, -14, -4, 6, 16, 26, 38, 50, 62, 74].map((x, i) => {
           const h = 14 + (Math.sin(i * 2.3) + 1) * 8;
           const w = 6 + (Math.cos(i * 1.7) + 1) * 3;
           return (

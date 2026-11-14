@@ -34,9 +34,9 @@ export const Explainer3DScene: React.FC<Explainer3DSceneProps> = ({
         fov={36}
       />
 
-      {/* Laboratory / Exam Room Studio Floor */}
+      {/* Laboratory / Exam Room Studio Floor (Expanded for 16:9 widescreen) */}
       <mesh receiveShadow position={[0, 0, 0]} rotation={[-Math.PI / 2, 0, 0]}>
-        <planeGeometry args={[20, 20]} />
+        <planeGeometry args={[80, 80]} />
         <meshStandardMaterial color="#0B1222" roughness={0.8} />
       </mesh>
 

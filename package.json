@@ -5,6 +5,10 @@
   "scripts": {
     "studio": "remotion studio remotion/index.ts",
     "render": "remotion render remotion/index.ts",
+    "render:vertical": "remotion render remotion/index.ts Short-9x16 renders/short_9x16.mp4",
+    "render:horizontal": "remotion render remotion/index.ts Video-16x9 renders/video_16x9.mp4",
+    "render:both": "remotion render remotion/index.ts Short-9x16 renders/short_9x16.mp4 && remotion render remotion/index.ts Video-16x9 renders/video_16x9.mp4",
+    "render:dual": "python scripts/render_dual.py",
     "build": "remotion bundle remotion/index.ts"
   },
   "dependencies": {

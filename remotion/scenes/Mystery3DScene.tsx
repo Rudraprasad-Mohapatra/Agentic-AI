@@ -14,7 +14,8 @@ export const Mystery3DScene: React.FC<Mystery3DSceneProps> = ({
   locationLabel = 'UNSOLVED CASE · FILE #840',
 }) => {
   const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
+  const { fps, width, height } = useVideoConfig();
+  const isLandscape = width > height;
   const t = frame / fps;
 
   // Gentle light flicker / hum
@@ -37,15 +38,15 @@ export const Mystery3DScene: React.FC<Mystery3DSceneProps> = ({
           fov={42}
         />
 
-        {/* Dark Damp Floor */}
+        {/* Dark Damp Floor (Extended for 16:9 widescreen) */}
         <mesh receiveShadow position={[0, 0, 0]} rotation={[-Math.PI / 2, 0, 0]}>
-          <planeGeometry args={[24, 24]} />
+          <planeGeometry args={[80, 80]} />
           <meshStandardMaterial color="#0A0C14" roughness={0.95} />
         </mesh>
 
-        {/* Back Mystery Wall */}
-        <mesh position={[0, 4, -4]}>
-          <planeGeometry args={[24, 10]} />
+        {/* Back Mystery Wall (Extended for 16:9 widescreen) */}
+        <mesh position={[0, 6, -4]}>
+          <planeGeometry args={[80, 20]} />
           <meshStandardMaterial color="#080B12" roughness={0.9} />
         </mesh>
 
@@ -108,12 +109,12 @@ export const Mystery3DScene: React.FC<Mystery3DSceneProps> = ({
         </group>
       </ThreeCanvasScene>
 
-      {/* Typewriter Evidence Date Card Overlay (Top-Left) */}
+      {/* Typewriter Evidence Date Card Overlay (Top-Left, Responsive) */}
       <div
         style={{
           position: 'absolute',
-          top: '90px',
-          left: '60px',
+          top: isLandscape ? '60px' : '90px',
+          left: isLandscape ? '60px' : '50px',
           fontFamily: 'Courier New, monospace',
           color: '#F1F5F9',
           letterSpacing: '2px',
@@ -121,10 +122,10 @@ export const Mystery3DScene: React.FC<Mystery3DSceneProps> = ({
           pointerEvents: 'none',
         }}
       >
-        <div style={{ fontSize: '32px', fontWeight: 900, color: '#EF4444' }}>
+        <div style={{ fontSize: isLandscape ? '26px' : '32px', fontWeight: 900, color: '#EF4444' }}>
           ● {dateLabel}
         </div>
-        <div style={{ fontSize: '22px', color: '#94A3B8', marginTop: '6px' }}>
+        <div style={{ fontSize: isLandscape ? '18px' : '22px', color: '#94A3B8', marginTop: '6px' }}>
           {locationLabel}
         </div>
       </div>

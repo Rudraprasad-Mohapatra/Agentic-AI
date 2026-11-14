@@ -8,6 +8,7 @@ export interface KineticCaptionsProps {
   textColor?: string;
   chunkSize?: number;
   bottomOffset?: number;
+  fontSize?: number;
 }
 
 export const KineticCaptions: React.FC<KineticCaptionsProps> = ({
@@ -15,13 +16,21 @@ export const KineticCaptions: React.FC<KineticCaptionsProps> = ({
   activeColor = '#FFD43B',
   textColor = '#FFFFFF',
   chunkSize = 4,
-  bottomOffset = 340,
+  bottomOffset,
+  fontSize,
 }) => {
   const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
+  const { fps, width, height } = useVideoConfig();
+  const isLandscape = width > height;
   const currentTime = frame / fps;
 
-  // Group words into readable visual chunks (2-4 words per display beat)
+  // Responsive safe zone and sizing for 9:16 vertical vs 16:9 widescreen
+  const finalBottom = bottomOffset ?? (isLandscape ? Math.round(height * 0.08) : 340);
+  const finalFontSize = fontSize ?? (isLandscape ? 50 : 64);
+  const finalMaxWidth = isLandscape ? Math.round(width * 0.78) : 920;
+  const finalChunkSize = isLandscape ? Math.max(chunkSize, 5) : chunkSize;
+
+  // Group words into readable visual chunks (2-5 words per display beat)
   const chunks = useMemo(() => {
     if (!words || words.length === 0) return [];
     const list: WordTiming[][] = [];
@@ -31,7 +40,7 @@ export const KineticCaptions: React.FC<KineticCaptionsProps> = ({
     for (let i = 0; i < words.length; i++) {
       const item = words[i];
       // Break on line change or when chunk exceeds size
-      if (item.line !== currentLine || currentChunk.length >= chunkSize) {
+      if (item.line !== currentLine || currentChunk.length >= finalChunkSize) {
         if (currentChunk.length > 0) list.push(currentChunk);
         currentChunk = [];
         currentLine = item.line;
@@ -40,7 +49,7 @@ export const KineticCaptions: React.FC<KineticCaptionsProps> = ({
     }
     if (currentChunk.length > 0) list.push(currentChunk);
     return list;
-  }, [words, chunkSize]);
+  }, [words, finalChunkSize]);
 
   // Find the active chunk corresponding to current playback time
   const activeChunk = useMemo(() => {
@@ -57,7 +66,7 @@ export const KineticCaptions: React.FC<KineticCaptionsProps> = ({
     <div
       style={{
         position: 'absolute',
-        bottom: `${bottomOffset}px`,
+        bottom: `${finalBottom}px`,
         left: 0,
         right: 0,
         display: 'flex',
@@ -74,8 +83,8 @@ export const KineticCaptions: React.FC<KineticCaptionsProps> = ({
           flexWrap: 'wrap',
           justifyContent: 'center',
           alignItems: 'center',
-          gap: '16px',
-          maxWidth: '920px',
+          gap: isLandscape ? '14px' : '16px',
+          maxWidth: `${finalMaxWidth}px`,
         }}
       >
         {activeChunk.map((item, idx) => {
@@ -103,7 +112,7 @@ export const KineticCaptions: React.FC<KineticCaptionsProps> = ({
               style={{
                 fontFamily: 'Inter, system-ui, -apple-system, sans-serif',
                 fontWeight: 900,
-                fontSize: '68px',
+                fontSize: `${finalFontSize}px`,
                 lineHeight: 1.15,
                 color,
                 scale,
