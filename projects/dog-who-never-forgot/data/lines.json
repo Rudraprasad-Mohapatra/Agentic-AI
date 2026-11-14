@@ -1,0 +1,91 @@
+{
+  "duration": 64.388,
+  "voice": "hi-IN-MadhurNeural",
+  "speed": 1.0,
+  "lines": [
+    {
+      "i": 0,
+      "text": "Ek gareeb aadmi ke paas khud khane ke paise nahi the...",
+      "start": 0.4,
+      "end": 3.933
+    },
+    {
+      "i": 1,
+      "text": "phir bhi woh roz ek bhookhe kutte ko apni roti khilata tha.",
+      "start": 4.213,
+      "end": 8.222
+    },
+    {
+      "i": 2,
+      "text": "Dheere-dheere, woh kutta us aadmi ka sabse sachha dost ban gaya.",
+      "start": 8.502,
+      "end": 12.871
+    },
+    {
+      "i": 3,
+      "text": "Aadmi jahan bhi jaata, kutta uske peeche-peeche jaata tha.",
+      "start": 13.151,
+      "end": 17.088
+    },
+    {
+      "i": 4,
+      "text": "Lekin ek andheri raat, aadmi jungle ke raaste ghar laut raha tha.",
+      "start": 17.368,
+      "end": 21.871
+    },
+    {
+      "i": 5,
+      "text": "Achanak uska pair phisla, aur woh ek gehri khaai mein gir gaya!",
+      "start": 22.151,
+      "end": 26.253
+    },
+    {
+      "i": 6,
+      "text": "Woh dard se chillaya, lekin jungle mein uski awaaz sunne wala koi nahi tha.",
+      "start": 26.533,
+      "end": 31.837
+    },
+    {
+      "i": 7,
+      "text": "Lekin uska wafadaar kutta himmat haarne wala nahi tha.",
+      "start": 32.117,
+      "end": 35.711
+    },
+    {
+      "i": 8,
+      "text": "Kutta poori taaqat se bhaagkar paas ke gaon pahucha.",
+      "start": 35.991,
+      "end": 39.31
+    },
+    {
+      "i": 9,
+      "text": "Woh zor-zor se bhonkne laga, aur logon ko kheenchkar jungle ki taraf le gaya.",
+      "start": 39.59,
+      "end": 44.549
+    },
+    {
+      "i": 10,
+      "text": "Gaon walon ne rassi daalkar us aadmi ko sahi salamat bacha liya.",
+      "start": 44.829,
+      "end": 49.167
+    },
+    {
+      "i": 11,
+      "text": "Aadmi ne rote hue kutte ko seene se laga liya aur kaha...",
+      "start": 49.447,
+      "end": 53.216
+    },
+    {
+      "i": 12,
+      "text": "Maine tujhe ek roti di thi, aur tune mujhe meri zindagi lauta di.",
+      "start": 53.496,
+      "end": 58.548
+    },
+    {
+      "i": 13,
+      "text": "NEXORA. Neki kabhi bhulayi nahi jaati.",
+      "start": 58.828,
+      "end": 62.488
+    }
+  ]
+}
