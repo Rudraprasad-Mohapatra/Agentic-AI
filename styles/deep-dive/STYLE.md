@@ -46,12 +46,19 @@ add({ id: 'S03', at: cut(2), note: 'x-ray chest, lungs full', draw(lt, d, t, bli
 ```
 Keep 2D pills and labels off faces (y 1150-1250 over the torso, or top y 300 when the head is low in frame).
 
-## 5. Rendering speed
+## 5. Remotion + Three.js Video Workflow
+When creating or upgrading Deep Dive 3D videos with the Remotion engine:
+1. **Audio & Timestamps**: Run `scripts/py scripts/voice.py <proj>` for Kokoro speech and `scripts/py scripts/words.py <proj>` for Whisper word-level timestamps (`data/words.json`).
+2. **React Three Fiber Scenes**: Build the visual shots as declarative React components in `remotion/scenes/` using `<ThreeCanvasScene>`, `<CameraRig>`, and `<KineticCaptions>` (or customize `remotion/scenes/Explainer3DScene.tsx`).
+3. **Live Studio Preview**: Run `npm run studio` or `npx remotion studio` to view real-time 3D lighting, x-ray materials, organ animations, and word-synced kinetic captions.
+4. **Export MP4**: Run `npm run render` or `npx remotion render remotion/index.ts Short3D renders/<name>.mp4`.
+
+## 6. Rendering speed (Legacy & Standalone)
 3D frames are heavy without a graphics card. On a normal computer with a GPU it renders at full quality. On a machine
 without one (or a cloud sandbox) render with `SOFTWARE_GL=1 QS='&res=0.6&aa=0&shadow=1024' FPS=24` (≈2 s per frame,
 ~30 min for a 37 s short) and check with `sheet ... 1` (one frame per second) before the full render.
 
-## 6. QA pitfalls we've hit
+## 7. QA pitfalls we've hit
 - A camera inside a light's glow cone washes the frame flat (cones are volumetric meshes): keep cameras out of them.
 - Seat backs / props between camera and subject: keep the camera in clear space (centre of an aisle).
 - Overlays on faces: check every frame where a pill or warning appears.

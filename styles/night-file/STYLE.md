@@ -30,7 +30,14 @@ Date + place → the person (subject glowing) → the strange event, step by ste
 3D shot → the moment it goes wrong (one hard sound) → what was found later (case wall, date) → the open question,
 UNSOLVED stamp. End on silence and the drone.
 
-## 4. QA pitfalls we've hit
+## 4. Remotion + Three.js Video Workflow
+When creating Night File 3D videos with Remotion:
+1. **Audio & Timestamps**: Run `scripts/py scripts/voice.py <proj> --voice am_onyx` and `scripts/py scripts/words.py <proj>` (`data/words.json`).
+2. **React Three Fiber Mystery Scene**: Use `remotion/scenes/Mystery3DScene.tsx` with dynamic cone spotlights, atmospheric haze, red glowing subject material, and evidence typewriter cards.
+3. **Live Studio Preview**: Launch `npm run studio` or `npx remotion studio` to preview lighting and word-synced captions interactively.
+4. **Export Final MP4**: Run `npm run render` or `npx remotion render remotion/index.ts Short3D renders/<name>.mp4`.
+
+## 5. QA pitfalls we've hit
 - Camera inside a light cone = flat brown frame. Seats or walls between camera and subject = blocked view.
 - Too-tight framing on a dark doorway reads as an empty frame: use a wider lens (`fov: 58`) for dark spaces.
 - Rendering speed: see Deep Dive STYLE.md section 5.

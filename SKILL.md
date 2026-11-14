@@ -113,11 +113,15 @@ engine/kit map, components, shot anatomy, cue types, QA pitfalls) and a complete
 shared scripts (voice, words, estimate, new_video, selftest) work unchanged. Add a row to the table above and run
 `selftest.sh` until every style passes.
 
-## 3D styles (Deep Dive, Night File, Tall Tale)
-They render real 3D with three.js in headless Chrome. With a graphics card it's fast and full quality. Without one
-(a laptop without GPU acceleration, a cloud sandbox) render with `SOFTWARE_GL=1 QS='&res=0.6&aa=0&shadow=1024'
-FPS=24` in front of `node tools/capture.mjs ...` (≈2 s per frame; tell the user the render time up front, run it in the
-background, and QA with `sheet review/all.jpg 1 10` first). Their STYLE.md files list the 3D API.
+## 3D styles (Deep Dive, Night File, Tall Tale & 3D Shorts via Remotion + Three.js)
+They render real 3D scenes with Three.js and Remotion (`@remotion/three`, `@react-three/fiber`):
+- **Local Audio & Timing**: Generate voice with `scripts/py scripts/voice.py <proj>` (or `voice_hindi.py`) and Whisper word-level timestamps with `scripts/py scripts/words.py <proj>` (`data/words.json`).
+- **Remotion + Three.js Engine (`remotion/`)**: Visual scenes use `<ThreeCanvas>` with real PBR materials, directional key lights with dynamic shadows, warm rim lights, and procedural animated characters (e.g. realistic road walking with stride kinematics).
+- **Animated Camera Rigs**: Driven by Remotion's `useCurrentFrame()`, `spring()`, and `interpolate()` in `<CameraRig>` for cinematic dolly tracking, orbits, and dramatic hero zooms.
+- **Word-Synced Kinetic Captions**: `<KineticCaptions>` parses Whisper `words.json` and pops the active word with spring scaling and high-contrast outline in the mobile safe zone.
+- **Interactive Preview**: Launch `npm run studio` or `npx remotion studio` to scrub frames and preview in real time.
+- **High-Definition Render**: Export MP4 at 1080x1920 (30 fps or 60 fps) using `npm run render` or `npx remotion render remotion/index.ts Short3D renders/<name>.mp4`.
+- Legacy standalone HTML5/WebGL capture via `node tools/capture.mjs` remains supported as a zero-dependency fallback.
 
 ## Never
 Generate images or video with AI; spend the user's money or credits; upload to YouTube or any host without the user asking and confirming; copy another creator's script, shots or frames;
