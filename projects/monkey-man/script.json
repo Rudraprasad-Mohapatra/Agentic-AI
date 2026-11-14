@@ -1,0 +1,28 @@
+{
+  "title": "The Delhi Monkey Man",
+  "voice": "am_onyx",
+  "speed": 0.95,
+  "lead": 0.5,
+  "outro": 1.2,
+  "gap": 0.38,
+  "music": "tension",
+  "sources": [
+    "BBC News, 'Delhi's mysterious monkey man' (May 2001: mass panic across East Delhi, Ghaziabad, Noida; two deaths from falling/stampede; dozens treated for scratches)",
+    "The Guardian, 'Mystery monkey man terrorises Delhi' (May 18, 2001: police switchboards overwhelmed, 50,000 rupee reward offered)",
+    "Time Magazine, 'The Monkey Man of Delhi' (Medical and psychiatric evaluation concluded the phenomenon was mass sociogenic illness exacerbated by heat and power cuts)"
+  ],
+  "lines": [
+    { "text": "In two thousand and one, Delhi was gripped by a terrifying urban legend,", "caps": "In *2001, | Delhi was *gripped | by an *urban legend," },
+    { "text": "where people were terrified to sleep on their own rooftops.", "caps": "terrified to *sleep | on their own *rooftops." },
+    { "text": "It was a sweltering May, and everyone was whispering about the Monkey Man.", "caps": "A sweltering *May, | whispering of the *Monkey Man." },
+    { "text": "Witnesses described a four foot beast with glowing red eyes,", "caps": "A four-foot *beast | with *glowing red eyes," },
+    { "text": "and razor sharp metal claws,", "caps": "and razor-sharp *metal claws," },
+    { "text": "leaping between buildings in the pitch dark.", "caps": "leaping between *buildings | in the *dark." },
+    { "text": "Police switchboards exploded with hundreds of frantic emergency calls,", "caps": "Police received *hundreds | of *emergency calls," },
+    { "text": "as terrified families huddled together under streetlights.", "caps": "families *huddled together | under *streetlights." },
+    { "text": "Dozens were injured, and two people tragically died in the panic.", "caps": "Dozens *injured, | two people *died | in the *panic." },
+    { "text": "Yet the mysterious creature was never captured,", "caps": "Yet the *creature | was never *captured," },
+    { "text": "and police concluded the sightings were driven entirely by mass hysteria.", "caps": "police concluded: | pure *mass hysteria." },
+    { "text": "Was it a real attacker, an urban myth, or India's biggest mass panic?", "caps": "A real *attacker, | a *myth, | or *mass panic?", "gap": 0.4 }
+  ]
+}
