@@ -1,0 +1,109 @@
+{
+  "title": "Barbarik - The Warrior Who Could Have Ended the War",
+  "title_hindi": "बर्बरीक – तीन बाणों वाला योद्धा",
+  "voice_hindi": "hi-IN-MadhurNeural",
+  "pitch_hindi": "-8Hz",
+  "speed": 0.98,
+  "lead": 0.4,
+  "outro": 1.8,
+  "gap": 0.26,
+  "music": "epic-cinematic",
+  "lines": [
+    {
+      "scene": 1,
+      "text": "Kalpana kijiye... ek aisa yoddha, jo sirf teen teeron se poori sena ka ant kar sakta tha!",
+      "voice_text": "कल्पना कीजिए... एक ऐसा योद्धा, जो सिर्फ तीन तीरों से पूरी सेना का अंत कर सकता था!",
+      "caps": "Imagine a warrior | who could destroy an entire army | with just three arrows!",
+      "overlay_text": "तीन बाणों वाला योद्धा",
+      "asset": "scene1_impossible_warrior.jpg"
+    },
+    {
+      "scene": 1,
+      "text": "Uska naam tha Barbarik, Bheem ka pota aur Ghatotkach ka putra.",
+      "voice_text": "उसका नाम था बर्बरीक, भीम का पोता और घटोत्कच का पुत्र।",
+      "caps": "His name was Barbarik, | grandson of Bhima | and son of Ghatotkacha.",
+      "overlay_text": "महाबली बर्बरीक",
+      "asset": "scene1_impossible_warrior.jpg"
+    },
+    {
+      "scene": 2,
+      "text": "Katha ke anusaar, uske paas teen divya baan the aur usne apni maa ko vachan diya tha ki woh hamesha yuddh mein haarne wale paksh ka saath dega.",
+      "voice_text": "कथा के अनुसार, उसके पास तीन दिव्य बाण थे और उसने अपनी माँ को वचन दिया था कि वह हमेशा युद्ध में हारने वाले पक्ष का साथ देगा।",
+      "caps": "Armed with three divine arrows, | he vowed to his mother | to always support the losing side.",
+      "overlay_text": "माँ को दिया वचन",
+      "asset": "scene2_three_arrows.jpg"
+    },
+    {
+      "scene": 3,
+      "text": "Jab woh Kurukshetra pahuncha, toh Shri Krishna ne Brahmin ka vesh dharan karke uski pariksha li.",
+      "voice_text": "जब वह कुरुक्षेत्र पहुँचा, तो श्रीकृष्ण ने ब्राह्मण का वेश धारण करके उसकी परीक्षा ली।",
+      "caps": "When he reached Kurukshetra, | Lord Krishna disguised as a Brahmin | tested his power.",
+      "overlay_text": "श्रीकृष्ण की परीक्षा",
+      "asset": "scene3_krishna_meets_barbarik.jpg"
+    },
+    {
+      "scene": 4,
+      "text": "Krishna ne peepal ke ped ke saare patton ko ek teer se bhedne ki chunauti di.",
+      "voice_text": "कृष्ण ने पीपल के पेड़ के सारे पत्तों को एक तीर से भेदने की चुनौती दी।",
+      "caps": "Krishna challenged him to pierce | every leaf of an enormous peepal tree | with a single arrow.",
+      "overlay_text": "असंभव चुनौती",
+      "asset": "scene4_impossible_test.jpg"
+    },
+    {
+      "scene": 4,
+      "text": "Barbarik ne teer chalaya... aur teer ne har patte ko bhed diya.",
+      "voice_text": "बर्बरीक ने तीर चलाया... और तीर ने हर पत्ते को भेद दिया।",
+      "caps": "Barbarik released the divine arrow... | and it pierced every single leaf in an instant.",
+      "overlay_text": "दिव्य तीर का प्रहार",
+      "asset": "scene4_impossible_test.jpg"
+    },
+    {
+      "scene": 5,
+      "text": "Yahan tak ki Krishna ke pair ke neeche chhipa patta bhi!",
+      "voice_text": "यहाँ तक कि कृष्ण के पैर के नीचे छिपा पत्ता भी!",
+      "caps": "Even the single hidden leaf | concealed beneath Krishna's foot!",
+      "overlay_text": "पैर के नीचे छिपा पत्ता",
+      "asset": "scene5_hidden_leaf.jpg"
+    },
+    {
+      "scene": 6,
+      "text": "Krishna samajh gaye ki agar Barbarik yuddh mein utra, toh uska paksh badalne ka vachan yuddh ka parinaam kabhi tay nahi hone dega.",
+      "voice_text": "कृष्ण समझ गए कि अगर बर्बरीक युद्ध में उतरा, तो उसका पक्ष बदलने का वचन युद्ध का परिणाम कभी तय नहीं होने देगा।",
+      "caps": "Krishna realized his vow | would keep shifting sides forever, | destroying both armies.",
+      "overlay_text": "महाभारत का संकट",
+      "asset": "scene6_revelation_sacrifice.jpg"
+    },
+    {
+      "scene": 6,
+      "text": "Tab Krishna ne usse sheesh daan maanga.",
+      "voice_text": "तब कृष्ण ने उससे शीश दान माँगा।",
+      "caps": "Lord Krishna then asked | for the supreme sacrifice: | his own head.",
+      "overlay_text": "शीश दान की माँग",
+      "asset": "scene6_revelation_sacrifice.jpg"
+    },
+    {
+      "scene": 6,
+      "text": "Barbarik ne saharsh apna sheesh daan kar diya aur poore Mahabharat yuddh ko dekhne ka vardaan maanga.",
+      "voice_text": "बर्बरीक ने सहर्ष अपना शीश दान कर दिया और पूरे महाभारत युद्ध को देखने का वरदान माँगा।",
+      "caps": "Barbarik joyfully gave his head, | asking only to witness | the entire epic war.",
+      "overlay_text": "महादानी बर्बरीक",
+      "asset": "scene6_revelation_sacrifice.jpg"
+    },
+    {
+      "scene": 7,
+      "text": "Isi tyaag ke kaaran unhein Kaliyug mein Khatu Shyam ke naam se pooja jaata hai.",
+      "voice_text": "इसी त्याग के कारण उन्हें कलियुग में खाटू श्याम के नाम से पूजा जाता है।",
+      "caps": "For this immortal sacrifice, | he is worshipped in Kaliyuga | as the supreme Khatu Shyam.",
+      "overlay_text": "जय श्री खाटू श्याम जी",
+      "asset": "scene7_blessing_shyam.jpg"
+    },
+    {
+      "scene": 8,
+      "text": "Aisi hi ansuni kathaon ke liye follow karein NEXORA!",
+      "voice_text": "ऐसी ही अनसुनी कथाओं के लिए Follow करें NEXORA!",
+      "caps": "Follow NEXORA | for more untold mythological stories!",
+      "overlay_text": "NEXORA",
+      "asset": "nexora_logo.jpg"
+    }
+  ]
+}

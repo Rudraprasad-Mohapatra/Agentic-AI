@@ -5,8 +5,10 @@ import { WalkingRoadScene } from './scenes/WalkingRoadScene';
 import { Explainer3DScene } from './scenes/Explainer3DScene';
 import { Mystery3DScene } from './scenes/Mystery3DScene';
 import { YuyutsuStoryScene } from './scenes/YuyutsuStoryScene';
+import { BarbarikFull3DScene } from './scenes/BarbarikFull3DScene';
 import { ShortVideoProps, WordTiming } from './types';
 import yuyutsuWords from '../projects/yuyutsu-kaurava/data/words.json';
+import barbarikWords from '../projects/barbarik/data/words.json';
 
 const defaultWords: WordTiming[] = [
   { w: 'In', line: 0, s: 0.2, e: 0.5 },
@@ -132,6 +134,34 @@ export const RemotionRoot: React.FC = () => {
         height={1080}
         defaultProps={{
           words: yuyutsuWords as WordTiming[],
+        }}
+      />
+
+      {/* ══════════════════════════════════════════════════════
+          BARBARIK: THE 3D WARRIOR WITH THREE DIVINE ARROWS
+          (TRUE 3D PROCEDURAL ANIMATIONS: 9:16 & 16:9)
+          ══════════════════════════════════════════════════════ */}
+      <Composition
+        id="Barbarik-9x16"
+        component={BarbarikFull3DScene}
+        durationInFrames={2240} // 74.67s @ 30fps
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{
+          words: barbarikWords as WordTiming[],
+        }}
+      />
+
+      <Composition
+        id="Barbarik-16x9"
+        component={BarbarikFull3DScene}
+        durationInFrames={2240} // 74.67s @ 30fps
+        fps={30}
+        width={1920}
+        height={1080}
+        defaultProps={{
+          words: barbarikWords as WordTiming[],
         }}
       />
 
