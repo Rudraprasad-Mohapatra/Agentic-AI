@@ -1,0 +1,117 @@
+{
+  "title": "The Kaurava Who Betrayed His 100 Brothers",
+  "title_hindi": "जिस भाई ने 100 कौरवों का साथ छोड़ दिया!",
+  "voice_hindi": "hi-IN-MadhurNeural",
+  "pitch_hindi": "-8Hz",
+  "speed": 0.98,
+  "lead": 0.4,
+  "outro": 1.8,
+  "gap": 0.28,
+  "music": "epic-cinematic",
+  "lines": [
+    {
+      "scene": 1,
+      "text": "Mahabharat mein ek aisa Kaurav bhi tha, jisne apne hi sau bhaiyon ke khilaaf yuddh lada!",
+      "voice_text": "महाभारत में एक ऐसा कौरव भी था, जिसने अपने ही 100 भाइयों के खिलाफ युद्ध लड़ा!",
+      "caps": "In the Mahabharata, | one lone Kaurava fought | against his own 100 brothers!",
+      "overlay_text": "100 भाइयों के खिलाफ एक कौरव!",
+      "asset": "scene1_kurukshetra_hook.jpg"
+    },
+    {
+      "scene": 2,
+      "text": "Uska naam tha Yuyutsu.",
+      "voice_text": "उसका नाम था युयुत्सु।",
+      "caps": "His name was Yuyutsu.",
+      "overlay_text": "धृतराष्ट्र का पुत्र – युयुत्सु",
+      "asset": "scene2_meet_yuyutsu.jpg"
+    },
+    {
+      "scene": 2,
+      "text": "Woh Dhritarashtra ka putra aur Duryodhan ka sautela bhai tha.",
+      "voice_text": "वह धृतराष्ट्र का पुत्र और दुर्योधन का सौतेला भाई था।",
+      "caps": "Son of King Dhritarashtra, | and half-brother to Duryodhana.",
+      "overlay_text": "कौरवों का भाई",
+      "asset": "scene2_meet_yuyutsu.jpg"
+    },
+    {
+      "scene": 3,
+      "text": "Lekin Yuyutsu apne bhaiyon ki tarah anyaay ka saath nahi dena chahta tha.",
+      "voice_text": "लेकिन युयुत्सु अपने भाइयों की तरह अन्याय का साथ नहीं देना चाहता था।",
+      "caps": "Yet unlike his brothers, | Yuyutsu refused | to side with injustice.",
+      "overlay_text": "अन्याय का विरोध",
+      "asset": "scene3_duryodhana_kauravas.jpg"
+    },
+    {
+      "scene": 4,
+      "text": "Jab Kurukshetra mein yuddh shuru hone wala tha, tab Yudhishthir ne dono senaon ke saamne ghoshna ki—",
+      "voice_text": "जब कुरुक्षेत्र में युद्ध शुरू होने वाला था, तब युधिष्ठिर ने दोनों सेनाओं के सामने घोषणा की—",
+      "caps": "As the war was about to begin, | Yudhishthira declared | before both massive armies:",
+      "overlay_text": "युधिष्ठिर की घोषणा",
+      "asset": "scene4_yudhishthira_announcement.jpg"
+    },
+    {
+      "scene": 4,
+      "text": "\"Jo bhi dharm ke paksh mein aana chahta hai, uska swaagat hai!\"",
+      "voice_text": "जो भी धर्म के पक्ष में आना चाहता है, उसका स्वागत है!",
+      "caps": "\"Whoever wishes to stand | with Dharma and truth | is welcome!\"",
+      "overlay_text": "धर्म का आह्वान",
+      "asset": "scene4_yudhishthira_announcement.jpg"
+    },
+    {
+      "scene": 5,
+      "text": "Aur tabhi ek aisa yoddha aage aaya, jiski kisi ne kalpana bhi nahi ki thi.",
+      "voice_text": "और तभी एक ऐसा योद्धा आगे आया, जिसकी किसी ने कल्पना भी नहीं की थी।",
+      "caps": "And right then, | a warrior stepped forward | whom no one could have imagined.",
+      "overlay_text": "अभूतपूर्व फैसला",
+      "asset": "scene5_battle_pandavas.jpg"
+    },
+    {
+      "scene": 5,
+      "text": "Woh tha Yuyutsu!",
+      "voice_text": "वह था युयुत्सु!",
+      "caps": "It was Yuyutsu!",
+      "overlay_text": "युयुत्सु का कदम",
+      "asset": "scene5_battle_pandavas.jpg"
+    },
+    {
+      "scene": 5,
+      "text": "Usne apne hi bhaiyon ka saath chhodkar Pandavon ki sena mein shaamil hone ka faisla kiya.",
+      "voice_text": "उसने अपने ही भाइयों का साथ छोड़कर पांडवों की सेना में शामिल होने का फैसला किया।",
+      "caps": "Leaving his own 100 brothers, | he crossed the battlefield | to join the Pandavas.",
+      "overlay_text": "कौरवों को छोड़ा",
+      "asset": "scene5_battle_pandavas.jpg"
+    },
+    {
+      "scene": 6,
+      "text": "Athaarah dinon tak chale mahayuddh mein usne Pandavon ki or se yuddh kiya aur jeevit bach gaya.",
+      "voice_text": "18 दिनों तक चले महायुद्ध में उसने पांडवों की ओर से युद्ध किया और जीवित बच गया।",
+      "caps": "Through 18 days of fierce war, | he fought for righteousness | and survived.",
+      "overlay_text": "18 दिनों का महायुद्ध",
+      "asset": "scene6_yuyutsu_sunset.jpg"
+    },
+    {
+      "scene": 6,
+      "text": "Sochiye... jis parivaar mein janm liya, usi ke khilaaf khada hona kitna kathin raha hoga!",
+      "voice_text": "सोचिए... जिस परिवार में जन्म लिया, उसी के खिलाफ खड़ा होना कितना कठिन रहा होगा!",
+      "caps": "Imagine the courage needed | to stand against the very family | you were born into!",
+      "overlay_text": "कठिन निर्णय",
+      "asset": "scene6_yuyutsu_sunset.jpg"
+    },
+    {
+      "scene": 6,
+      "text": "Kyunki Yuyutsu ne saabit kiya ki sahi aur galat ka faisla rishton se nahi, karmon se hota hai.",
+      "voice_text": "क्योंकि युयुत्सु ने साबित किया कि सही और गलत का फैसला रिश्तों से नहीं, कर्मों से होता है।",
+      "caps": "Because Yuyutsu proved | that righteousness is defined | by deeds, not bloodlines.",
+      "overlay_text": "धर्म रिश्तों से बड़ा होता है",
+      "asset": "scene6_yuyutsu_sunset.jpg"
+    },
+    {
+      "scene": 7,
+      "text": "Aisi hi ansuni kahaniyon ke liye follow karein NEXORA!",
+      "voice_text": "ऐसी ही अनसुनी कहानियों के लिए Follow करें NEXORA!",
+      "caps": "Follow NEXORA | for more untold epic stories!",
+      "overlay_text": "NEXORA",
+      "asset": "nexora_logo.jpg"
+    }
+  ]
+}

@@ -4,7 +4,9 @@ import { ShortVideo } from './components/ShortVideo';
 import { WalkingRoadScene } from './scenes/WalkingRoadScene';
 import { Explainer3DScene } from './scenes/Explainer3DScene';
 import { Mystery3DScene } from './scenes/Mystery3DScene';
+import { YuyutsuStoryScene } from './scenes/YuyutsuStoryScene';
 import { ShortVideoProps, WordTiming } from './types';
+import yuyutsuWords from '../projects/yuyutsu-kaurava/data/words.json';
 
 const defaultWords: WordTiming[] = [
   { w: 'In', line: 0, s: 0.2, e: 0.5 },
@@ -103,6 +105,34 @@ export const RemotionRoot: React.FC = () => {
         height={1080}
         defaultProps={defaultShortProps}
         calculateMetadata={calculateVideoMetadata}
+      />
+
+      {/* ══════════════════════════════════════════════════════
+          YUYUTSU: THE KAURAVA WHO BETRAYED 100 BROTHERS
+          (DUAL FORMAT: 9:16 SHORTS & 16:9 LONG-FORM)
+          ══════════════════════════════════════════════════════ */}
+      <Composition
+        id="Yuyutsu-9x16"
+        component={YuyutsuStoryScene}
+        durationInFrames={2120} // 70.66s @ 30fps
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{
+          words: yuyutsuWords as WordTiming[],
+        }}
+      />
+
+      <Composition
+        id="Yuyutsu-16x9"
+        component={YuyutsuStoryScene}
+        durationInFrames={2120} // 70.66s @ 30fps
+        fps={30}
+        width={1920}
+        height={1080}
+        defaultProps={{
+          words: yuyutsuWords as WordTiming[],
+        }}
       />
 
       {/* ══════════════════════════════════════════════════════
