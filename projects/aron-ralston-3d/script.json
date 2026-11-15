@@ -1,0 +1,41 @@
+{
+  "title": "He Was Trapped Under a Boulder and Made an Unthinkable Decision",
+  "voice": "am_michael",
+  "speed": 1.0,
+  "lead": 0.4,
+  "outro": 1.2,
+  "gap": 0.25,
+  "music": "bounce",
+  "sources": [
+    "Aron Ralston, 'Between a Rock and a Hard Place' (2004)",
+    "National Geographic, 'Aron Ralston: 127 Hours'",
+    "The Guardian, 'The man who cut off his own arm to save his life'"
+  ],
+  "lines": [
+    { "text": "In April 2003, a twenty-seven-year-old climber named Mr. Aron Ralston set out for a solo adventure in Utah's canyon country.", "caps": "In April 2003, | a 27-year-old climber | Mr. Aron Ralston | set out for | a solo adventure." },
+    { "text": "He didn't tell a single person where he was going.", "caps": "He didn't tell | a single person | where he was going.", "gap": 0.35 },
+    { "text": "Deep inside Blue John Canyon, he was squeezing through a narrow slot...", "caps": "Deep inside | Blue John Canyon, | he was squeezing | through a narrow slot..." },
+    { "text": "when an eight-hundred-pound boulder suddenly shifted and crushed his right hand against the canyon wall.", "caps": "when an 800-pound boulder | suddenly shifted | and crushed | his right hand | against the wall.", "gap": 0.4 },
+    { "text": "He was completely alone. No phone signal. No one knew he was there.", "caps": "He was alone. | No phone signal. | No one knew | he was there.", "gap": 0.35 },
+    { "text": "He pushed. He pulled. He chipped at the rock with a cheap pocket knife.", "caps": "He pushed. | He pulled. | He chipped | at the rock | with a pocket knife." },
+    { "text": "Nothing worked.", "caps": "Nothing worked.", "gap": 0.5 },
+    { "text": "By the second day, his water ran out.", "caps": "By the second day, | his water | ran out.", "gap": 0.3 },
+    { "text": "By the third day, he was drinking his own urine to stay alive.", "caps": "By the third day, | he was drinking | his own urine | to stay alive.", "gap": 0.35 },
+    { "text": "He carved his own name and the date he expected to die into the canyon wall.", "caps": "He carved his name | and the date | he expected to die | into the canyon wall.", "gap": 0.4 },
+    { "text": "But on the fifth morning, something changed.", "caps": "But on the fifth morning, | something changed.", "gap": 0.5 },
+    { "text": "He saw a vision of a little boy... his future son, running toward him.", "caps": "He saw a vision | of a little boy... | his future son, | running toward him.", "gap": 0.35 },
+    { "text": "And in that moment, Mr. Ralston decided: he was NOT going to die in this canyon.", "caps": "And in that moment, | Mr. Ralston decided: | he was NOT | going to die | in this canyon.", "gap": 0.4 },
+    { "text": "What he did next is almost impossible to believe.", "caps": "What he did next | is almost impossible | to believe.", "gap": 0.5 },
+    { "text": "He snapped his own forearm bones by leveraging them against the boulder.", "caps": "He snapped | his own forearm bones | by leveraging them | against the boulder.", "gap": 0.3 },
+    { "text": "Then, with a dull pocket knife, he cut through his own arm to set himself free.", "caps": "Then, with a dull knife, | he cut through | his own arm | to set himself free.", "gap": 0.5 },
+    { "text": "It took over an hour.", "caps": "It took | over an hour.", "gap": 0.5 },
+    { "text": "Bleeding and barely conscious, Mr. Ralston rappelled down a sixty-five-foot cliff.", "caps": "Bleeding and barely conscious, | Mr. Ralston | rappelled down | a 65-foot cliff." },
+    { "text": "Then he walked eight miles through the blazing desert sun.", "caps": "Then he walked | eight miles | through the blazing | desert sun.", "gap": 0.3 },
+    { "text": "A rescue helicopter finally spotted him and rushed him to the hospital.", "caps": "A rescue helicopter | finally spotted him | and rushed him | to the hospital.", "gap": 0.35 },
+    { "text": "Against every odd, Mr. Aron Ralston survived.", "caps": "Against every odd, | Mr. Aron Ralston | survived.", "gap": 0.5 },
+    { "text": "He didn't just survive. He went back to climbing mountains.", "caps": "He didn't just survive. | He went back | to climbing mountains.", "gap": 0.35 },
+    { "text": "He even climbed all of Colorado's fifty-nine tallest peaks... with one arm.", "caps": "He even climbed | all of Colorado's | 59 tallest peaks... | with one arm.", "gap": 0.4 },
+    { "text": "Some rocks are meant to stop you. Others are meant to show you what you're made of.", "caps": "Some rocks | are meant to stop you. | Others are meant | to show you | what you're made of.", "gap": 0.5 },
+    { "text": "For more unbelievable true stories, follow NEXORA!", "caps": "For more | true stories, | follow | NEXORA!" }
+  ]
+}
