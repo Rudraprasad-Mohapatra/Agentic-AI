@@ -1,0 +1,125 @@
+{
+  "title": "The 16-Year-Old Who Entered Chakravyuha",
+  "title_hindi": "अभिमन्यु – चक्रव्यूह में फँसा 16 साल का योद्धा",
+  "voice_hindi": "hi-IN-MadhurNeural",
+  "pitch_hindi": "-6Hz",
+  "speed": 0.98,
+  "lead": 0.35,
+  "outro": 1.5,
+  "gap": 0.28,
+  "music": "epic-cinematic",
+  "lines": [
+    {
+      "scene": 1,
+      "text": "Mahabharat ke yuddh mein ek aisa veer tha, jisne sirf 16 saal ki umar mein Kauravon ki sabse khatarnak sena ko chunauti de di!",
+      "voice_text": "महाभारत के युद्ध में एक ऐसा वीर था, जिसने सिर्फ 16 साल की उम्र में कौरवों की सबसे खतरनाक सेना को चुनौती दे दी!",
+      "caps": "In the Mahabharata war, | a 16-year-old hero | challenged the deadliest enemy army!",
+      "overlay_text": "16 साल का महायोद्धा",
+      "asset": "scene1_young_abhimanyu.jpg"
+    },
+    {
+      "scene": 2,
+      "text": "Uska naam tha Abhimanyu, Arjun aur Subhadra ka putra.",
+      "voice_text": "उसका नाम था अभिमन्यु, अर्जुन और सुभद्रा का पुत्र।",
+      "caps": "His name was Abhimanyu, | son of Arjuna and Subhadra.",
+      "overlay_text": "अर्जुन-पुत्र अभिमन्यु",
+      "asset": "scene2_arjuna_son.jpg"
+    },
+    {
+      "scene": 3,
+      "text": "Yuddh ke terahvein din, Guru Drona ne ek bhayanak Chakravyuha racha.",
+      "voice_text": "युद्ध के तेरहवें दिन, गुरु द्रोण ने एक भयानक चक्रव्यूह रचा।",
+      "caps": "On the 13th day of the war, | Guru Drona formed | the terrifying Chakravyuha.",
+      "overlay_text": "भयानक चक्रव्यूह",
+      "asset": "scene3_chakravyuha_formation.jpg"
+    },
+    {
+      "scene": 3,
+      "text": "Use todna lagbhag asambhav tha.",
+      "voice_text": "उसे तोड़ना लगभग असंभव था।",
+      "caps": "Breaching it | was nearly impossible.",
+      "overlay_text": "अभेद्य चक्रव्यूह",
+      "asset": "scene3_chakravyuha_formation.jpg"
+    },
+    {
+      "scene": 4,
+      "text": "Arjun yuddh-bhoomi ke doosre chhor par the. Tabhi Abhimanyu aage aaya.",
+      "voice_text": "अर्जुन युद्धभूमि के दूसरे छोर पर थे। तभी अभिमन्यु आगे आया।",
+      "caps": "Arjuna was lured away far across the battlefield. | That is when Abhimanyu stepped forward.",
+      "overlay_text": "अभिमन्यु का साहस",
+      "asset": "scene4_abhimanyu_steps_up.jpg"
+    },
+    {
+      "scene": 5,
+      "text": "Use Chakravyuha mein ghusna aata tha, lekin baahar nikalne ka tareeka nahi.",
+      "voice_text": "उसे चक्रव्यूह में घुसना आता था, लेकिन बाहर निकलने का तरीका नहीं।",
+      "caps": "He knew how to break inside the maze, | but not how to escape.",
+      "overlay_text": "प्रवेश का रहस्य",
+      "asset": "scene5_charge_into_maze.jpg"
+    },
+    {
+      "scene": 5,
+      "text": "Phir bhi woh apne parivaar ki raksha ke liye usme ghus gaya.",
+      "voice_text": "फिर भी वह अपने परिवार की रक्षा के लिए उसमें घुस गया।",
+      "caps": "Yet to protect his family and Dharma, | he fearlessly charged inside.",
+      "overlay_text": "महापराक्रमी प्रवेश",
+      "asset": "scene5_charge_into_maze.jpg"
+    },
+    {
+      "scene": 6,
+      "text": "Lekin Jayadratha ne baaki Pandavon ko andar aane se rok diya.",
+      "voice_text": "लेकिन जयद्रथ ने बाकी पांडवों को अंदर आने से रोक दिया।",
+      "caps": "Behind him, Jayadratha blocked | the rest of the Pandavas from entering.",
+      "overlay_text": "जयद्रथ का छल",
+      "asset": "scene6_jayadratha_blocks.jpg"
+    },
+    {
+      "scene": 7,
+      "text": "Abhimanyu akela pad gaya.",
+      "voice_text": "अभिमन्यु अकेला पड़ गया।",
+      "caps": "Young Abhimanyu | was trapped completely alone.",
+      "overlay_text": "अकेला वीर",
+      "asset": "scene7_trapped_alone.jpg"
+    },
+    {
+      "scene": 8,
+      "text": "Kauravon ke kayi maharathiyon ne milkar us par hamla kiya. Uska rath toota, dhanush toota... lekin uska saahas nahi toota.",
+      "voice_text": "कौरवों के कई महारथियों ने मिलकर उस पर हमला किया। उसका रथ टूटा, धनुष टूटा... लेकिन उसका साहस नहीं टूटा।",
+      "caps": "Multiple Kaurava warriors attacked him at once! | His chariot shattered, his bow broke... | but his courage never broke.",
+      "overlay_text": "चक्रव्यूह में अंतिम युद्ध",
+      "asset": "scene8_chariot_wheel_fight.jpg"
+    },
+    {
+      "scene": 9,
+      "text": "Aakhirkarr woh veergati ko praapt hua.",
+      "voice_text": "आखिरकार वह वीरगति को प्राप्त हुआ।",
+      "caps": "Fighting to his very last breath, | he achieved supreme martyrdom.",
+      "overlay_text": "अमर बलिदान",
+      "asset": "scene9_heroic_martyrdom.jpg"
+    },
+    {
+      "scene": 10,
+      "text": "Jab Arjun ko apne bete ki mrityu ka pata chala, toh unhone Jayadratha ko agle din sooryaast se pehle maarne ki pratigya li.",
+      "voice_text": "जब अर्जुन को अपने बेटे की मृत्यु का पता चला, तो उन्होंने जयद्रथ को अगले दिन सूर्यास्त से पहले मारने की प्रतिज्ञा ली।",
+      "caps": "When Arjuna learned of his son's fall, | he swore a fiery oath | to slay Jayadratha before the next sunset.",
+      "overlay_text": "अर्जुन की महाप्रतिज्ञा",
+      "asset": "scene10_arjuna_furious_vow.jpg"
+    },
+    {
+      "scene": 11,
+      "text": "Abhimanyu haarkar bhi itihaas mein amar ho gaya.",
+      "voice_text": "अभिमन्यु हारकर भी इतिहास में अमर हो गया।",
+      "caps": "Though fallen in battle, | Abhimanyu became immortal in history forever.",
+      "overlay_text": "इतिहास में अमर",
+      "asset": "scene11_abhimanyu_immortal.jpg"
+    },
+    {
+      "scene": 12,
+      "text": "Aisi hi veer-gaathaon ke liye Follow karein NEXORA!",
+      "voice_text": "ऐसी ही वीरगाथाओं के लिए Follow करें NEXORA!",
+      "caps": "Follow NEXORA | for more untold epics of Indian History!",
+      "overlay_text": "Follow NEXORA",
+      "asset": "scene12_nexora_outro.jpg"
+    }
+  ]
+}
