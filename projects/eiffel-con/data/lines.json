@@ -1,0 +1,149 @@
+{
+  "lines": [
+    {
+      "i": 0,
+      "text": "In 1925, a charming master con artist named Mr. Victor Lustig sold the Eiffel Tower for scrap metal.",
+      "start": 0.35,
+      "end": 7.068,
+      "dur": 6.718,
+      "badge": "PARIS, 1925",
+      "asset": "scene1_victor_lustig_hero.jpg"
+    },
+    {
+      "i": 1,
+      "text": "And then... he sold it a second time.",
+      "start": 7.318,
+      "end": 9.551,
+      "dur": 2.233,
+      "badge": "THE IMPOSSIBLE HEIST",
+      "asset": "scene1_victor_lustig_hero.jpg"
+    },
+    {
+      "i": 2,
+      "text": "Back then, the Eiffel Tower was rusting, peeling, and costing Paris a fortune just to maintain.",
+      "start": 9.901,
+      "end": 15.705,
+      "dur": 5.804,
+      "badge": "THE RUSTING MONUMENT",
+      "asset": "scene2_newspaper_demolition.jpg"
+    },
+    {
+      "i": 3,
+      "text": "Newspapers wrote that it might be torn down. So Mr. Lustig forged official French government credentials,",
+      "start": 15.955,
+      "end": 22.587,
+      "dur": 6.632,
+      "badge": "THE FORGERY",
+      "asset": "scene3_forged_credentials.jpg"
+    },
+    {
+      "i": 4,
+      "text": "rented a luxury suite at the Hôtel de Crillon, and secretly summoned Paris's top scrap-metal dealers.",
+      "start": 22.807,
+      "end": 28.591,
+      "dur": 5.785,
+      "badge": "THE SECRET AUCTION",
+      "asset": "scene4_crillon_secret_meeting.jpg"
+    },
+    {
+      "i": 5,
+      "text": "He claimed the demolition was a state secret to prevent public rioting—and opened bids for 7,000 tons of iron.",
+      "start": 28.841,
+      "end": 35.463,
+      "dur": 6.622,
+      "badge": "7,000 TONS OF SCRAP",
+      "asset": "scene4_crillon_secret_meeting.jpg"
+    },
+    {
+      "i": 6,
+      "text": "One wealthy dealer, Mr. André Poisson, desperately wanted the prestige—until he started getting suspicious.",
+      "start": 35.713,
+      "end": 42.275,
+      "dur": 6.562,
+      "badge": "THE SUSPICIOUS MARK",
+      "asset": "scene6_the_bribe_demand.jpg"
+    },
+    {
+      "i": 7,
+      "text": "Seeing him hesitate, Mr. Lustig played his masterstroke: he leaned in and quietly demanded a massive bribe.",
+      "start": 42.525,
+      "end": 48.742,
+      "dur": 6.217,
+      "badge": "THE MASTERSTROKE",
+      "asset": "scene6_the_bribe_demand.jpg"
+    },
+    {
+      "i": 8,
+      "text": "That sealed the deal. Mr. Poisson thought: 'A corrupt bureaucrat taking a bribe? This must be the real government!'",
+      "start": 49.022,
+      "end": 57.006,
+      "dur": 7.984,
+      "badge": "CORRUPT BUREAUCRAT",
+      "asset": "scene6_the_bribe_demand.jpg"
+    },
+    {
+      "i": 9,
+      "text": "Mr. Poisson handed over a fortune in cash, and Mr. Lustig caught the first train to Vienna with a suitcase full of francs.",
+      "start": 57.306,
+      "end": 64.227,
+      "dur": 6.92,
+      "badge": "THE ESCAPE",
+      "asset": "scene1_victor_lustig_hero.jpg"
+    },
+    {
+      "i": 10,
+      "text": "Now here’s the insane part: Mr. Poisson was so paralyzed by shame, terrified of becoming the laughingstock of France,",
+      "start": 64.527,
+      "end": 71.66,
+      "dur": 7.133,
+      "badge": "THE HUMILIATION",
+      "asset": "scene8_poisson_silent_shame.jpg"
+    },
+    {
+      "i": 11,
+      "text": "that he never uttered a single word to the police!",
+      "start": 71.88,
+      "end": 74.453,
+      "dur": 2.573,
+      "badge": "TOTAL SILENCE",
+      "asset": "scene8_poisson_silent_shame.jpg"
+    },
+    {
+      "i": 12,
+      "text": "When Mr. Lustig saw zero headlines in the papers, he realized he got away scot-free.",
+      "start": 74.803,
+      "end": 79.904,
+      "dur": 5.101,
+      "badge": "NO HEADLINES",
+      "asset": "scene2_newspaper_demolition.jpg"
+    },
+    {
+      "i": 13,
+      "text": "So he marched right back into Paris, booked another luxury suite, and sold the Eiffel Tower all over again to another victim!",
+      "start": 80.154,
+      "end": 87.3,
+      "dur": 7.146,
+      "badge": "SOLD IT TWICE!",
+      "asset": "scene10_sold_second_time.jpg"
+    },
+    {
+      "i": 14,
+      "text": "Because in the end, Mr. Lustig wasn't selling an iron tower... he was selling human greed.",
+      "start": 87.65,
+      "end": 92.965,
+      "dur": 5.315,
+      "badge": "THE LESSON",
+      "asset": "scene11_lustig_legacy_lesson.jpg"
+    },
+    {
+      "i": 15,
+      "text": "For more unbelievable true stories, follow NEXORA!",
+      "start": 93.365,
+      "end": 96.644,
+      "dur": 3.28,
+      "badge": "NEXORA ORIGINALS",
+      "asset": "scene11_lustig_legacy_lesson.jpg"
+    }
+  ],
+  "total_duration": 98.144
+}

@@ -1,0 +1,107 @@
+{
+  "title": "He Sold The Eiffel Tower… Twice!",
+  "voice": "en-US-ChristopherNeural",
+  "speed": 1.02,
+  "pitch": "-2Hz",
+  "lead": 0.35,
+  "outro": 1.0,
+  "gap": 0.22,
+  "lines": [
+    {
+      "text": "In 1925, a charming master con artist named Mr. Victor Lustig sold the Eiffel Tower for scrap metal.",
+      "badge": "PARIS, 1925",
+      "asset": "scene1_victor_lustig_hero.jpg",
+      "gap": 0.25
+    },
+    {
+      "text": "And then... he sold it a second time.",
+      "badge": "THE IMPOSSIBLE HEIST",
+      "asset": "scene1_victor_lustig_hero.jpg",
+      "gap": 0.35
+    },
+    {
+      "text": "Back then, the Eiffel Tower was rusting, peeling, and costing Paris a fortune just to maintain.",
+      "badge": "THE RUSTING MONUMENT",
+      "asset": "scene2_newspaper_demolition.jpg",
+      "gap": 0.25
+    },
+    {
+      "text": "Newspapers wrote that it might be torn down. So Mr. Lustig forged official French government credentials,",
+      "badge": "THE FORGERY",
+      "asset": "scene3_forged_credentials.jpg",
+      "gap": 0.22
+    },
+    {
+      "text": "rented a luxury suite at the Hôtel de Crillon, and secretly summoned Paris's top scrap-metal dealers.",
+      "badge": "THE SECRET AUCTION",
+      "asset": "scene4_crillon_secret_meeting.jpg",
+      "gap": 0.25
+    },
+    {
+      "text": "He claimed the demolition was a state secret to prevent public rioting—and opened bids for 7,000 tons of iron.",
+      "badge": "7,000 TONS OF SCRAP",
+      "asset": "scene4_crillon_secret_meeting.jpg",
+      "gap": 0.25
+    },
+    {
+      "text": "One wealthy dealer, Mr. André Poisson, desperately wanted the prestige—until he started getting suspicious.",
+      "badge": "THE SUSPICIOUS MARK",
+      "asset": "scene6_the_bribe_demand.jpg",
+      "gap": 0.25
+    },
+    {
+      "text": "Seeing him hesitate, Mr. Lustig played his masterstroke: he leaned in and quietly demanded a massive bribe.",
+      "badge": "THE MASTERSTROKE",
+      "asset": "scene6_the_bribe_demand.jpg",
+      "gap": 0.28
+    },
+    {
+      "text": "That sealed the deal. Mr. Poisson thought: 'A corrupt bureaucrat taking a bribe? This must be the real government!'",
+      "badge": "CORRUPT BUREAUCRAT",
+      "asset": "scene6_the_bribe_demand.jpg",
+      "gap": 0.30
+    },
+    {
+      "text": "Mr. Poisson handed over a fortune in cash, and Mr. Lustig caught the first train to Vienna with a suitcase full of francs.",
+      "badge": "THE ESCAPE",
+      "asset": "scene1_victor_lustig_hero.jpg",
+      "gap": 0.30
+    },
+    {
+      "text": "Now here’s the insane part: Mr. Poisson was so paralyzed by shame, terrified of becoming the laughingstock of France,",
+      "badge": "THE HUMILIATION",
+      "asset": "scene8_poisson_silent_shame.jpg",
+      "gap": 0.22
+    },
+    {
+      "text": "that he never uttered a single word to the police!",
+      "badge": "TOTAL SILENCE",
+      "asset": "scene8_poisson_silent_shame.jpg",
+      "gap": 0.35
+    },
+    {
+      "text": "When Mr. Lustig saw zero headlines in the papers, he realized he got away scot-free.",
+      "badge": "NO HEADLINES",
+      "asset": "scene2_newspaper_demolition.jpg",
+      "gap": 0.25
+    },
+    {
+      "text": "So he marched right back into Paris, booked another luxury suite, and sold the Eiffel Tower all over again to another victim!",
+      "badge": "SOLD IT TWICE!",
+      "asset": "scene10_sold_second_time.jpg",
+      "gap": 0.35
+    },
+    {
+      "text": "Because in the end, Mr. Lustig wasn't selling an iron tower... he was selling human greed.",
+      "badge": "THE LESSON",
+      "asset": "scene11_lustig_legacy_lesson.jpg",
+      "gap": 0.40
+    },
+    {
+      "text": "For more unbelievable true stories, follow NEXORA!",
+      "badge": "NEXORA ORIGINALS",
+      "asset": "scene11_lustig_legacy_lesson.jpg",
+      "gap": 0.50
+    }
+  ]
+}
