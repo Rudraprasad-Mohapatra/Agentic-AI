@@ -1,0 +1,41 @@
+{
+  "title": "He Sold The Eiffel Tower… Twice!",
+  "voice": "am_michael",
+  "speed": 1.0,
+  "lead": 0.35,
+  "outro": 1.2,
+  "gap": 0.25,
+  "music": "bounce",
+  "sources": [
+    "Smithsonian Magazine, 'The Man Who Sold the Eiffel Tower. Twice.'",
+    "BBC History, 'Victor Lustig: The con man who sold the Eiffel Tower twice'",
+    "The Guardian, 'The scam that sold the Eiffel Tower'"
+  ],
+  "lines": [
+    { "text": "In 1925, a con artist named Mr. Victor Lustig pulled off the craziest scam in history.", "caps": "In 1925, | Mr. Victor Lustig | pulled off | the craziest scam | in history." },
+    { "text": "He sold the entire Eiffel Tower... not once, but twice!", "caps": "He sold | the entire | Eiffel Tower... | not once, | but twice!", "gap": 0.4 },
+    { "text": "Back then, the Eiffel Tower was rusting badly in the dark Paris skies.", "caps": "Back then, | the Eiffel Tower | was rusting badly | in Paris." },
+    { "text": "Newspapers reported that the city was thinking about tearing it down.", "caps": "Newspapers reported | the city | might tear it down." },
+    { "text": "So under the cover of night, Mr. Lustig forged official French government credentials.", "caps": "Under cover of night, | Mr. Lustig | forged | official credentials." },
+    { "text": "He called Paris's top scrap-metal dealers to a secret midnight meeting at the Hotel de Crillon.", "caps": "He invited | top scrap dealers | to a secret | midnight meeting." },
+    { "text": "In a dim, private suite, he whispered that the demolition was a top-secret state project.", "caps": "In a private suite, | he whispered | demolition | was a state secret." },
+    { "text": "And he opened private bids for seven thousand tons of scrap iron.", "caps": "And opened | private bids | for 7,000 tons | of scrap iron." },
+    { "text": "One wealthy dealer, Mr. André Poisson, was desperate to win the contract.", "caps": "One wealthy dealer, | Mr. André Poisson, | was desperate | to win." },
+    { "text": "Until he suddenly grew suspicious: why was this meeting so secretive?", "caps": "Until | he grew suspicious: | why so secretive?", "gap": 0.35 },
+    { "text": "Sensing his hesitation, Mr. Lustig played his masterstroke:", "caps": "Sensing his doubt, | Mr. Lustig | played | his masterstroke:" },
+    { "text": "he leaned in close... and quietly demanded a massive bribe.", "caps": "he leaned in close... | and demanded | a massive bribe.", "gap": 0.3 },
+    { "text": "Instantly, Mr. Poisson's doubts vanished.", "caps": "Instantly, | Mr. Poisson's doubts | vanished." },
+    { "text": "He thought: a corrupt bureaucrat? This must be the real government!", "caps": "He thought: | a corrupt official? | This must be | the real government!" },
+    { "text": "So Mr. Poisson handed over a suitcase stuffed with cash...", "caps": "Poisson handed over | a suitcase | full of cash..." },
+    { "text": "and Mr. Lustig escaped on the midnight train to Vienna.", "caps": "and Mr. Lustig | escaped | on the midnight train | to Vienna." },
+    { "text": "Now here's the craziest twist:", "caps": "Now here's | the craziest twist:", "gap": 0.35 },
+    { "text": "Mr. Poisson was so humiliated that he bought the Eiffel Tower...", "caps": "Poisson was so humiliated | that he bought | the Eiffel Tower..." },
+    { "text": "he never said a single word to the police!", "caps": "he never said | a single word | to the police!" },
+    { "text": "When Mr. Lustig saw zero headlines in the morning news,", "caps": "When Lustig saw | zero headlines | in the news," },
+    { "text": "he slipped right back into Paris under the moonlight,", "caps": "he slipped | right back | into Paris," },
+    { "text": "and sold the Eiffel Tower all over again to another victim!", "caps": "and sold | the Eiffel Tower | all over again | to another victim!", "gap": 0.4 },
+    { "text": "Because in the end, he was never selling iron...", "caps": "Because in the end, | he was never | selling iron..." },
+    { "text": "he was selling human greed.", "caps": "he was selling | human greed.", "gap": 0.4 },
+    { "text": "For more unbelievable true stories, follow NEXORA!", "caps": "For more | true stories, | follow | NEXORA!" }
+  ]
+}
