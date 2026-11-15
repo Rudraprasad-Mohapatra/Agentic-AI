@@ -1,29 +1,9 @@
 {
   "name": "faceless-shorts",
   "version": "1.0.0",
-  "description": "Faceless shorts video engine with 3D Remotion and Three.js capabilities",
+  "description": "Narrated faceless YouTube Shorts / TikToks / Reels fully in code ($0 local AI voice + procedural 3D/2D animation)",
+  "type": "module",
   "scripts": {
-    "studio": "remotion studio remotion/index.ts",
-    "render": "remotion render remotion/index.ts",
-    "render:vertical": "remotion render remotion/index.ts Short-9x16 renders/short_9x16.mp4",
-    "render:horizontal": "remotion render remotion/index.ts Video-16x9 renders/video_16x9.mp4",
-    "render:both": "remotion render remotion/index.ts Short-9x16 renders/short_9x16.mp4 && remotion render remotion/index.ts Video-16x9 renders/video_16x9.mp4",
-    "render:dual": "python scripts/render_dual.py",
-    "build": "remotion bundle remotion/index.ts"
-  },
-  "dependencies": {
-    "@react-three/fiber": "^9.0.0",
-    "@remotion/cli": "^4.0.543",
-    "@remotion/three": "^4.0.543",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "remotion": "^4.0.543",
-    "three": "^0.181.0"
-  },
-  "devDependencies": {
-    "@types/react": "^19.0.0",
-    "@types/react-dom": "^19.0.0",
-    "@types/three": "^0.181.0",
-    "typescript": "^5.7.0"
+    "selftest": "bash scripts/selftest.sh"
   }
 }

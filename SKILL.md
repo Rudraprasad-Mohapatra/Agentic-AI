@@ -113,17 +113,6 @@ engine/kit map, components, shot anatomy, cue types, QA pitfalls) and a complete
 shared scripts (voice, words, estimate, new_video, selftest) work unchanged. Add a row to the table above and run
 `selftest.sh` until every style passes.
 
-## Dual-Format & 3D Video Engine (9:16 Shorts + 16:9 Long-Form via Remotion & Three.js)
-Both vertical Shorts (9:16) and widescreen long videos (16:9) are generated from the exact same script, duration, audio narration, and 3D scenes:
-- **Local Audio & Timing**: Generate voice with `scripts/py scripts/voice.py <proj>` (or `voice_hindi.py`) and Whisper word timestamps with `scripts/py scripts/words.py <proj>` (`data/words.json`).
-- **Aspect-Responsive 3D Engine (`remotion/`)**: Visual scenes adaptively render in either:
-  - **9:16 Vertical Short** (`1080x1920`): Composition `Short-9x16`, mobile safe zone padding, compact kinetic caption scale.
-  - **16:9 Horizontal Video** (`1920x1080`): Composition `Video-16x9`, wide panoramic landscape terrain, lower-third caption placement.
-- **True 3D Realism**: Procedural characters with walk cycles, real PBR materials, key sun with dynamic shadows, warm rim lights, streetlamps with point lights, and roadside trees.
-- **Kinetic Captions**: Responsive `<KineticCaptions>` synchronizes with Whisper `words.json`, popping spoken words with spring scale animations and high-contrast ink borders.
-- **One-Command Dual Render**: Run `python scripts/render_dual.py [project]` (or `npm run render:both`) to produce both `_9x16_short.mp4` and `_16x9_long.mp4` simultaneously.
-- **Live Preview**: Run `npm run studio` to preview and toggle between `Short-9x16`, `Video-16x9`, and individual scenes.
-
 ## Never
 Generate images or video with AI; spend the user's money or credits; upload to YouTube or any host without the user asking and confirming; copy another creator's script, shots or frames;
 overwrite a user's project without asking; ship a frame you haven't looked at.
