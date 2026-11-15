@@ -10,8 +10,6 @@ import {
 } from 'remotion';
 import { ThreeCanvasScene } from '../components/ThreeCanvasScene';
 import { CinematicParallaxCard } from '../components/CinematicParallaxCard';
-import { SudarshanChakra3D } from '../components/SudarshanChakra3D';
-import { TeenBaan3D } from '../components/TeenBaan3D';
 import { FloatingEmbers3D } from '../components/FloatingEmbers3D';
 import { WordTiming } from '../types';
 import * as THREE from 'three';
@@ -113,14 +111,9 @@ export const BarbarikFull3DScene: React.FC<BarbarikFull3DSceneProps> = ({
           cameraMotion="pushIn"
           isLandscape={isLandscape}
           focusPoint={{ x: 50, y: 35 }}
+          fitMode={isLandscape ? undefined : 'contain-scene'}
         >
           <ThreeCanvasScene backgroundColor="transparent" fogColor="" shadows={false}>
-            {/* Real 3D Teen Baan glowing above Barbarik's open palm */}
-            <TeenBaan3D
-              position={[isLandscape ? -0.85 : -0.72, 0.42, 0]}
-              scale={isLandscape ? 0.72 : 0.85}
-              glowIntensity={4.2}
-            />
             {/* Drifting golden embers in true 3D space */}
             <FloatingEmbers3D count={35} color="#FBBF24" />
           </ThreeCanvasScene>
@@ -134,7 +127,8 @@ export const BarbarikFull3DScene: React.FC<BarbarikFull3DSceneProps> = ({
           durationInFrames={145}
           cameraMotion="heroZoom"
           isLandscape={isLandscape}
-          focusPoint={{ x: 48, y: 28 }}
+          focusPoint={{ x: 50, y: 30 }}
+          fitMode={isLandscape ? undefined : 'contain-scene'}
         >
           <ThreeCanvasScene backgroundColor="transparent" fogColor="" shadows={false}>
             <FloatingEmbers3D count={30} color="#FDE047" speedMultiplier={1.2} />
@@ -150,9 +144,9 @@ export const BarbarikFull3DScene: React.FC<BarbarikFull3DSceneProps> = ({
           cameraMotion="craneUp"
           isLandscape={isLandscape}
           focusPoint={{ x: 50, y: 40 }}
+          fitMode={isLandscape ? 'contain-scene' : 'cover'}
         >
           <ThreeCanvasScene backgroundColor="transparent" fogColor="" shadows={false}>
-            <TeenBaan3D position={[0, 0.15, 0]} scale={1.05} glowIntensity={4.5} />
             <FloatingEmbers3D count={40} color="#FBBF24" />
           </ThreeCanvasScene>
         </CinematicParallaxCard>
@@ -165,7 +159,8 @@ export const BarbarikFull3DScene: React.FC<BarbarikFull3DSceneProps> = ({
           durationInFrames={200}
           cameraMotion="panRight"
           isLandscape={isLandscape}
-          focusPoint={{ x: 28, y: 55 }}
+          focusPoint={{ x: 50, y: 55 }}
+          fitMode={isLandscape ? undefined : 'contain-scene'}
         >
           <ThreeCanvasScene backgroundColor="transparent" fogColor="" shadows={false}>
             <FloatingEmbers3D count={25} color="#FEF08A" speedMultiplier={0.8} />
@@ -180,7 +175,8 @@ export const BarbarikFull3DScene: React.FC<BarbarikFull3DSceneProps> = ({
           durationInFrames={165}
           cameraMotion="pushIn"
           isLandscape={isLandscape}
-          focusPoint={{ x: 52, y: 35 }}
+          focusPoint={{ x: 50, y: 40 }}
+          fitMode={isLandscape ? undefined : 'contain-scene'}
         >
           <ThreeCanvasScene backgroundColor="transparent" fogColor="" shadows={false}>
             <FloatingEmbers3D count={30} color="#FBBF24" />
@@ -195,7 +191,8 @@ export const BarbarikFull3DScene: React.FC<BarbarikFull3DSceneProps> = ({
           durationInFrames={167}
           cameraMotion="craneUp"
           isLandscape={isLandscape}
-          focusPoint={{ x: 55, y: 30 }}
+          focusPoint={{ x: 50, y: 50 }}
+          fitMode={isLandscape ? undefined : 'contain-scene'}
         >
           <ThreeCanvasScene backgroundColor="transparent" fogColor="" shadows={false}>
             {/* Divine Arrow streak particles */}
@@ -206,82 +203,31 @@ export const BarbarikFull3DScene: React.FC<BarbarikFull3DSceneProps> = ({
 
       {/* SHOT 7: THE HIDDEN LEAF BENEATH KRISHNA'S FOOT (41.15 – 44.85s, 111f) */}
       <Sequence from={1235} durationInFrames={111}>
-        <div style={{ position: 'relative', width: '100%', height: '100%' }}>
-          <ThreeCanvasScene
-            backgroundColor="#0B0D18"
-            fogColor="#0B0D18"
-            fogNear={4}
-            fogFar={18}
-            shadows={true}
-          >
-            {/* Ground earth */}
-            <mesh receiveShadow position={[0, 0, 0]} rotation={[-Math.PI / 2, 0, 0]}>
-              <planeGeometry args={[20, 20]} />
-              <meshStandardMaterial color="#2B1E13" roughness={0.9} />
-            </mesh>
-
-            {/* Krishna's Lotus Foot on Ground */}
-            <group position={[0, 0.08, 0]}>
-              <mesh castShadow position={[0, 0.06, 0]}>
-                <boxGeometry args={[0.26, 0.16, 0.52]} />
-                <meshStandardMaterial color="#38BDF8" roughness={0.5} />
-              </mesh>
-              {/* Golden Anklet */}
-              <mesh position={[0, 0.14, -0.1]}>
-                <torusGeometry args={[0.14, 0.022, 8, 16]} />
-                <meshStandardMaterial color="#FBBF24" metalness={0.9} roughness={0.1} />
-              </mesh>
-            </group>
-
-            {/* The Single Green Peepal Leaf Under Foot */}
-            <mesh position={[0, 0.02, 0.18]} rotation={[-Math.PI / 2, 0, 0.15]}>
-              <planeGeometry args={[0.25, 0.36]} />
-              <meshStandardMaterial color="#16A34A" roughness={0.5} />
-            </mesh>
-
-            {/* Divine Golden Arrow Hovering & Vibrating Directly Above Foot */}
-            <group position={[0, 0.68 + Math.sin(frame * 1.5) * 0.025, 0.18]}>
-              <mesh>
-                <cylinderGeometry args={[0.016, 0.016, 0.85, 8]} />
-                <meshStandardMaterial color="#FDE047" metalness={0.9} />
-              </mesh>
-              <mesh position={[0, -0.44, 0]} rotation={[Math.PI, 0, 0]}>
-                <coneGeometry args={[0.06, 0.2, 8]} />
-                <meshStandardMaterial
-                  color="#FEF08A"
-                  emissive="#FBBF24"
-                  emissiveIntensity={5.5}
-                />
-              </mesh>
-              {/* Pulsing Shockwave Light Ring */}
-              <mesh position={[0, -0.42, 0]} rotation={[Math.PI / 2, 0, 0]}>
-                <ringGeometry args={[0.16, 0.22, 24]} />
-                <meshBasicMaterial color="#FBBF24" side={THREE.DoubleSide} />
-              </mesh>
-              <pointLight position={[0, -0.44, 0]} intensity={4.5} distance={7} color="#FBBF24" />
-            </group>
-
-            <FloatingEmbers3D count={25} color="#FBBF24" />
+        <CinematicParallaxCard
+          imageSrc={staticFile('barbarik/krishna_foot_leaf_arrow.jpg')}
+          durationInFrames={111}
+          cameraMotion="pushIn"
+          isLandscape={isLandscape}
+          focusPoint={{ x: 50, y: 50 }}
+          fitMode={isLandscape ? 'contain-scene' : 'cover'}
+        >
+          <ThreeCanvasScene backgroundColor="transparent" fogColor="" shadows={false}>
+            <FloatingEmbers3D count={35} color="#FBBF24" speedMultiplier={1.4} />
           </ThreeCanvasScene>
-        </div>
+        </CinematicParallaxCard>
       </Sequence>
 
-      {/* SHOT 8: KRISHNA'S SUDARSHAN CHAKRA & DIVINE DIALOGUE (44.85 – 53.62s, 263f) */}
+      {/* SHOT 8: KRISHNA & BARBARIK DIALOGUE (44.85 – 53.62s, 263f) */}
       <Sequence from={1346} durationInFrames={263}>
         <CinematicParallaxCard
           imageSrc={staticFile('barbarik/krishna_talk_perfect_clean.png')}
           durationInFrames={263}
           cameraMotion="pushIn"
           isLandscape={isLandscape}
-          focusPoint={{ x: 42, y: 40 }}
+          focusPoint={{ x: 50, y: 45 }}
+          fitMode={isLandscape ? undefined : 'contain-scene'}
         >
           <ThreeCanvasScene backgroundColor="transparent" fogColor="" shadows={false}>
-            {/* 🪓 SUDARSHAN CHAKRA SPINS RIGHT ABOVE KRISHNA'S RAISED HAND (NO TRISHUL!) 🪓 */}
-            <SudarshanChakra3D
-              position={[isLandscape ? -0.84 : -0.66, 0.44, 0]}
-              scale={isLandscape ? 0.65 : 0.78}
-              rotationSpeed={0.16}
-            />
             <FloatingEmbers3D count={40} color="#FBBF24" />
           </ThreeCanvasScene>
         </CinematicParallaxCard>
@@ -294,7 +240,8 @@ export const BarbarikFull3DScene: React.FC<BarbarikFull3DSceneProps> = ({
           durationInFrames={302}
           cameraMotion="pullBack"
           isLandscape={isLandscape}
-          focusPoint={{ x: 52, y: 45 }}
+          focusPoint={{ x: 50, y: 50 }}
+          fitMode={isLandscape ? undefined : 'contain-scene'}
         >
           <ThreeCanvasScene backgroundColor="transparent" fogColor="" shadows={false}>
             <FloatingEmbers3D count={45} color="#FBBF24" speedMultiplier={0.9} />
@@ -307,9 +254,10 @@ export const BarbarikFull3DScene: React.FC<BarbarikFull3DSceneProps> = ({
         <CinematicParallaxCard
           imageSrc={staticFile('barbarik/khatu_shyam_divine.png')}
           durationInFrames={193}
-          cameraMotion="craneUp"
+          cameraMotion="heroZoom"
           isLandscape={isLandscape}
-          focusPoint={{ x: 50, y: 35 }}
+          focusPoint={{ x: 50, y: 40 }}
+          fitMode={isLandscape ? undefined : 'contain-scene'}
         >
           <ThreeCanvasScene backgroundColor="transparent" fogColor="" shadows={false}>
             <FloatingEmbers3D count={50} color="#FEF08A" speedMultiplier={1.1} />
