@@ -299,6 +299,52 @@ export const PROPS = {
   cup: (g, x, y) => { g.fillStyle = '#F4EFE4'; g.strokeStyle = INK; g.lineWidth = 6; g.beginPath(); g.roundRect(x - 30, y - 70, 60, 70, [4, 4, 14, 14]); g.fill(); g.stroke(); g.beginPath(); g.arc(x + 34, y - 36, 16, -1.4, 1.4); g.stroke(); g.fillStyle = '#7A4A2A'; g.fillRect(x - 24, y - 64, 48, 10); },
   key: (g, x, y) => { g.strokeStyle = INK; g.lineWidth = 5; g.fillStyle = '#E6B850'; g.beginPath(); g.arc(x, y - 60, 22, 0, 7); g.fill(); g.stroke(); g.fillRect(x - 5, y - 40, 10, 50); g.strokeRect(x - 5, y - 40, 10, 50); },
   sign: (text = 'SALE', col = '#F2EDE0') => (g, x, y) => { g.strokeStyle = INK; g.lineWidth = 6; g.fillStyle = '#9A6A43'; g.fillRect(x - 6, y - 150, 12, 160); g.strokeRect(x - 6, y - 150, 12, 160); g.fillStyle = col; g.beginPath(); g.roundRect(x - 100, y - 250, 200, 110, 10); g.fill(); g.stroke(); g.fillStyle = INK; g.font = '900 44px Inter'; g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillText(text, x, y - 194); },
+  smartphone: (notifications = 99) => (g, x, y) => {
+    g.save(); g.translate(x, y - 45);
+    g.fillStyle = '#1C1C1E'; g.strokeStyle = INK; g.lineWidth = 4;
+    g.beginPath(); g.roundRect(-24, -45, 48, 90, 8); g.fill(); g.stroke();
+    g.fillStyle = '#4895EF'; g.beginPath(); g.roundRect(-20, -38, 40, 76, 4); g.fill();
+    g.fillStyle = '#E63946'; g.beginPath(); g.arc(16, -38, 12, 0, 7); g.fill();
+    g.fillStyle = '#FFF'; g.font = '900 12px Inter'; g.textAlign = 'center';
+    g.fillText(String(notifications), 16, -34);
+    g.restore();
+  },
+  coffeeMug: (steam = 1) => (g, x, y) => {
+    g.save(); g.translate(x, y - 35);
+    g.fillStyle = '#E76F51'; g.strokeStyle = INK; g.lineWidth = 5;
+    g.beginPath(); g.roundRect(-20, -25, 40, 50, [2, 2, 8, 8]); g.fill(); g.stroke();
+    g.beginPath(); g.arc(22, 0, 12, -1.2, 1.2); g.stroke();
+    if (steam) {
+      g.strokeStyle = 'rgba(220,220,230,0.6)'; g.lineWidth = 3;
+      g.beginPath(); g.moveTo(-8, -32); g.quadraticCurveTo(-14, -44, -8, -54); g.stroke();
+      g.beginPath(); g.moveTo(8, -34); g.quadraticCurveTo(14, -46, 8, -56); g.stroke();
+    }
+    g.restore();
+  },
+  wallet: (open = 1) => (g, x, y) => {
+    g.save(); g.translate(x, y - 40);
+    g.fillStyle = '#5C3317'; g.strokeStyle = INK; g.lineWidth = 4;
+    if (open) {
+      g.beginPath(); g.roundRect(-50, -30, 100, 60, 6); g.fill(); g.stroke();
+      g.strokeStyle = '#D4AF37'; g.lineWidth = 2;
+      g.strokeRect(-45, -24, 40, 20); g.strokeRect(5, -24, 40, 20);
+      // tiny cobweb in fold
+      g.strokeStyle = 'rgba(255,255,255,0.7)'; g.lineWidth = 1.5;
+      g.beginPath(); g.moveTo(-15, -15); g.lineTo(15, -15); g.moveTo(-10, -5); g.lineTo(10, -5); g.stroke();
+    } else {
+      g.beginPath(); g.roundRect(-25, -30, 50, 60, 6); g.fill(); g.stroke();
+    }
+    g.restore();
+  },
+  magnifyingGlass: (g, x, y) => {
+    g.save(); g.translate(x, y - 40); g.rotate(-0.3);
+    g.strokeStyle = '#7A5236'; g.lineWidth = 8;
+    g.beginPath(); g.moveTo(0, 0); g.lineTo(0, 45); g.stroke();
+    g.fillStyle = 'rgba(180, 220, 255, 0.45)'; g.strokeStyle = '#D4AF37'; g.lineWidth = 6;
+    g.beginPath(); g.arc(0, -25, 32, 0, 7); g.fill(); g.stroke();
+    g.fillStyle = '#FFF'; g.beginPath(); g.ellipse(-10, -35, 5, 12, 0.8, 0, 7); g.fill();
+    g.restore();
+  },
 };
 function bill(g, x, y, rot) {
   g.save(); g.translate(x, y); g.rotate(rot); g.fillStyle = '#9ED39A'; g.strokeStyle = INK; g.lineWidth = 5;

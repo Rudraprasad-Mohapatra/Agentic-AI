@@ -53,6 +53,15 @@ Write numbers as they're said ("seven"). Read it out loud in your head: if it so
 Original writing only: take a format you like, never another creator's script or shots. Every fact is checked against a
 reliable source (list them in `script.json` "sources"). Health topics: accurate, no gore, no scary misinformation.
 
+**Cinematic Enhancement & Relatable Objects Rule (Always Apply):**
+Every video produced must incorporate human-relatable, amusing physical props and cinematic camera grammar:
+- **Anchor with Relatable Everyday Objects**: Avoid purely abstract or empty scenes. Ground the narrative with familiar objects that viewers laugh at and relate to (leather wallets revealing spiderwebs, dollar bills sprouting wings and flying away, smartphones buzzing with 99+ notifications, steaming takeout coffees, alarm clocks).
+- **3-Beat Comedic & Cinematic Arc**:
+  1. *The Confident Setup*: Smooth cinematic dolly or push-in on character acting proud/smug.
+  2. *The Snap Macro Reveal*: On the keyword Whisper timestamp (`Wd('word')`), snap-zoom into the prop with shallow depth-of-field (`focus: 0.7`). Trigger instant character reaction (`mood: 'shock'`, `sweat: true`).
+  3. *The Absurd Payoff*: The prop delivers an exaggerated visual gag (wings flapping, spider crawling, steam puffing) paired with an upward tracking or parallax camera move. Character payoff: `sad`, `tears: true`, or `dizzy`.
+- **Reusable Props**: Always leverage the procedural 3D props in `core/props.js` (`bifoldWallet`, `wingedDollar`, `smartphone`, `coffeeMug`, `storeCounter`) and hand props in `core/toon.js` (`PROPS.smartphone`, `PROPS.coffeeMug`, `PROPS.wallet`, `PROPS.magnifyingGlass`).
+
 ## 3. Build
 1. `bash SKILL/scripts/new_video.sh <style> <short-name>` copies the example into `~/faceless-shorts/<short-name>/`.
 2. Write `script.json` (lines + caps + gaps; see STYLE.md).

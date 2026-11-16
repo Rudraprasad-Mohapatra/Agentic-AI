@@ -49,3 +49,21 @@ renders with depth of field), `blit()`, then any 2D overlay (a RETURN TO SENDER 
 - People inside furniture: check feet heights (boardwalk 0.18, counter top 1.18 + scale 0.08).
 - Shadows only fall inside the sun's shadow box: move `sun.key.target` near the action when you build a new set.
 - Rendering speed: same as Deep Dive (`SOFTWARE_GL=1 QS='&res=0.6&aa=0&shadow=1024' FPS=24` without a GPU, ≈2-3 s/frame).
+
+## 5. Cinematic Enhancements: Relatable Props & 3-Beat Comedic Timing
+Every video made in this style should leverage cinematic visual comedy and relatable everyday objects:
+- **3-Beat Comedic Arc**:
+  1. *Beat 1 (The Setup)*: Smooth dolly in on character acting confident (`mood: 'smug'` or `'proud'`).
+  2. *Beat 2 (The Snap Macro Reveal)*: Tight camera snap zoom on the spoken keyword (`Wd('word')`) right over the prop with shallow depth of field (`focus: 0.7`). Character reaction: `shock`, `sweat: true`.
+  3. *Beat 3 (The Absurd Payoff)*: The prop animates unexpectedly (dollar sprouts wings and flies away, smartphone blows up with notifications, coffee steam puffs wildly), with an ascending tracking camera shot.
+- **Built-in 3D Props (`core/props.js`)**:
+  - `bifoldWallet()`: Leather bifold with functional hinge and procedural spiderweb inside. `.setOpen(k)` (0 = closed, 1 = open).
+  - `wingedDollar()`: Banknote with feathered angelic wings that flap rapidly. `.update(t, flightK)` moves and wobbles.
+  - `smartphone(notifications)`: Modern sleek phone with glowing screen and red notification pill.
+  - `coffeeMug()`: Hot takeout coffee with rising procedural steam puffs. `.update(t)`.
+  - `storeCounter()`: Wooden counter desk with vintage brass cash register.
+- **Hand Props (`core/toon.js` PROPS)**:
+  - `PROPS.smartphone(99)`: Phone held in hand with customizable notification count.
+  - `PROPS.coffeeMug(steam)`: Mug with steam puffs.
+  - `PROPS.wallet(open)`: Bifold wallet with spiderweb line art.
+  - `PROPS.magnifyingGlass()`: Cartoon magnifying glass with gold rim and lens glare.
