@@ -12,6 +12,7 @@
     "The Guardian, 'The man who cut off his own arm to save his life'"
   ],
   "lines": [
+    { "text": "Did you know that a climber was once trapped under an eight-hundred-pound boulder... and made the most unthinkable decision just to survive?", "caps": "Did you know | a climber was trapped | under an 800-pound boulder... | and made the unthinkable decision | to survive?", "gap": 0.4 },
     { "text": "In April 2003, a twenty-seven-year-old climber named Mr. Aron Ralston set out for a solo adventure in Utah's canyon country.", "caps": "In April 2003, | a 27-year-old climber | Mr. Aron Ralston | set out for | a solo adventure." },
     { "text": "He didn't tell a single person where he was going.", "caps": "He didn't tell | a single person | where he was going.", "gap": 0.35 },
     { "text": "Deep inside Blue John Canyon, he was squeezing through a narrow slot...", "caps": "Deep inside | Blue John Canyon, | he was squeezing | through a narrow slot..." },

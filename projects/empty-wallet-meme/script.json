@@ -1,0 +1,23 @@
+{
+  "title": "Where Does Your Money Actually Go?",
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lead": 0.25,
+  "outro": 0.8,
+  "gap": 0.16,
+  "music": "bounce",
+  "sources": [
+    "Universal Human Experience"
+  ],
+  "lines": [
+    { "text": "Ever wonder where your money actually goes?", "caps": "Ever wonder | where your money | actually goes?" },
+    { "text": "You work forty hours feeling like an absolute boss,", "caps": "You work | forty hours | feeling like | an absolute boss," },
+    { "text": "and you strut into the store ready to spend.", "caps": "and you strut | into the store | ready to spend." },
+    { "text": "You reach into your pocket, pull out your leather wallet,", "caps": "You reach | into your pocket, | pull out | your leather wallet," },
+    { "text": "flip it wide open,", "caps": "flip it | wide open," },
+    { "text": "and there is nothing inside except a solitary spiderweb.", "caps": "and there is | nothing inside | except | a solitary spiderweb." },
+    { "text": "And before you can even blink,", "caps": "And before | you can even blink," },
+    { "text": "your last dollar bill sprouts wings and flies away forever.", "caps": "your last dollar bill | sprouts wings | and flies away | forever." },
+    { "text": "Leaving you broke until next payday.", "caps": "Leaving you broke | until next payday.", "gap": 0.25 }
+  ]
+}

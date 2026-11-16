@@ -1,157 +1,163 @@
 {
- "duration": 112.285,
+ "duration": 121.316,
  "voice": "am_michael",
  "speed": 1.0,
  "lines": [
   {
    "i": 0,
-   "text": "In April 2003, a twenty-seven-year-old climber named Mr. Aron Ralston set out for a solo adventure in Utah's canyon country.",
+   "text": "Did you know that a climber was once trapped under an eight-hundred-pound boulder... and made the most unthinkable decision just to survive?",
    "start": 0.4,
-   "end": 10.309
+   "end": 9.031
   },
   {
    "i": 1,
-   "text": "He didn't tell a single person where he was going.",
-   "start": 10.559,
-   "end": 13.352
+   "text": "In April 2003, a twenty-seven-year-old climber named Mr. Aron Ralston set out for a solo adventure in Utah's canyon country.",
+   "start": 9.431,
+   "end": 19.34
   },
   {
    "i": 2,
-   "text": "Deep inside Blue John Canyon, he was squeezing through a narrow slot...",
-   "start": 13.702,
-   "end": 18.262
+   "text": "He didn't tell a single person where he was going.",
+   "start": 19.59,
+   "end": 22.383
   },
   {
    "i": 3,
-   "text": "when an eight-hundred-pound boulder suddenly shifted and crushed his right hand against the canyon wall.",
-   "start": 18.512,
-   "end": 24.581
+   "text": "Deep inside Blue John Canyon, he was squeezing through a narrow slot...",
+   "start": 22.733,
+   "end": 27.293
   },
   {
    "i": 4,
-   "text": "He was completely alone. No phone signal. No one knew he was there.",
-   "start": 24.981,
-   "end": 29.372
+   "text": "when an eight-hundred-pound boulder suddenly shifted and crushed his right hand against the canyon wall.",
+   "start": 27.543,
+   "end": 33.613
   },
   {
    "i": 5,
-   "text": "He pushed. He pulled. He chipped at the rock with a cheap pocket knife.",
-   "start": 29.722,
-   "end": 34.155
+   "text": "He was completely alone. No phone signal. No one knew he was there.",
+   "start": 34.013,
+   "end": 38.403
   },
   {
    "i": 6,
-   "text": "Nothing worked.",
-   "start": 34.405,
-   "end": 35.359
+   "text": "He pushed. He pulled. He chipped at the rock with a cheap pocket knife.",
+   "start": 38.753,
+   "end": 43.186
   },
   {
    "i": 7,
-   "text": "By the second day, his water ran out.",
-   "start": 35.859,
-   "end": 38.09
+   "text": "Nothing worked.",
+   "start": 43.436,
+   "end": 44.39
   },
   {
    "i": 8,
-   "text": "By the third day, he was drinking his own urine to stay alive.",
-   "start": 38.39,
-   "end": 42.243
+   "text": "By the second day, his water ran out.",
+   "start": 44.89,
+   "end": 47.121
   },
   {
    "i": 9,
-   "text": "He carved his own name and the date he expected to die into the canyon wall.",
-   "start": 42.593,
-   "end": 47.296
+   "text": "By the third day, he was drinking his own urine to stay alive.",
+   "start": 47.421,
+   "end": 51.274
   },
   {
    "i": 10,
-   "text": "But on the fifth morning, something changed.",
-   "start": 47.696,
-   "end": 49.822
+   "text": "He carved his own name and the date he expected to die into the canyon wall.",
+   "start": 51.624,
+   "end": 56.328
   },
   {
    "i": 11,
-   "text": "He saw a vision of a little boy... his future son, running toward him.",
-   "start": 50.322,
-   "end": 54.649
+   "text": "But on the fifth morning, something changed.",
+   "start": 56.728,
+   "end": 58.853
   },
   {
    "i": 12,
-   "text": "And in that moment, Mr. Ralston decided: he was NOT going to die in this canyon.",
-   "start": 54.999,
-   "end": 60.404
+   "text": "He saw a vision of a little boy... his future son, running toward him.",
+   "start": 59.353,
+   "end": 63.68
   },
   {
    "i": 13,
-   "text": "What he did next is almost impossible to believe.",
-   "start": 60.804,
-   "end": 64.023
+   "text": "And in that moment, Mr. Ralston decided: he was NOT going to die in this canyon.",
+   "start": 64.03,
+   "end": 69.435
   },
   {
    "i": 14,
-   "text": "He snapped his own forearm bones by leveraging them against the boulder.",
-   "start": 64.523,
-   "end": 68.724
+   "text": "What he did next is almost impossible to believe.",
+   "start": 69.835,
+   "end": 73.054
   },
   {
    "i": 15,
-   "text": "Then, with a dull pocket knife, he cut through his own arm to set himself free.",
-   "start": 69.024,
-   "end": 73.821
+   "text": "He snapped his own forearm bones by leveraging them against the boulder.",
+   "start": 73.554,
+   "end": 77.755
   },
   {
    "i": 16,
-   "text": "It took over an hour.",
-   "start": 74.321,
-   "end": 75.536
+   "text": "Then, with a dull pocket knife, he cut through his own arm to set himself free.",
+   "start": 78.055,
+   "end": 82.853
   },
   {
    "i": 17,
-   "text": "Bleeding and barely conscious, Mr. Ralston rappelled down a sixty-five-foot cliff.",
-   "start": 76.036,
-   "end": 81.282
+   "text": "It took over an hour.",
+   "start": 83.353,
+   "end": 84.567
   },
   {
    "i": 18,
-   "text": "Then he walked eight miles through the blazing desert sun.",
-   "start": 81.532,
-   "end": 84.458
+   "text": "Bleeding and barely conscious, Mr. Ralston rappelled down a sixty-five-foot cliff.",
+   "start": 85.067,
+   "end": 90.313
   },
   {
    "i": 19,
-   "text": "A rescue helicopter finally spotted him and rushed him to the hospital.",
-   "start": 84.758,
-   "end": 89.212
+   "text": "Then he walked eight miles through the blazing desert sun.",
+   "start": 90.563,
+   "end": 93.49
   },
   {
    "i": 20,
-   "text": "Against every odd, Mr. Aron Ralston survived.",
-   "start": 89.562,
-   "end": 92.881
+   "text": "A rescue helicopter finally spotted him and rushed him to the hospital.",
+   "start": 93.79,
+   "end": 98.243
   },
   {
    "i": 21,
-   "text": "He didn't just survive. He went back to climbing mountains.",
-   "start": 93.381,
-   "end": 96.799
+   "text": "Against every odd, Mr. Aron Ralston survived.",
+   "start": 98.593,
+   "end": 101.913
   },
   {
    "i": 22,
-   "text": "He even climbed all of Colorado's fifty-nine tallest peaks... with one arm.",
-   "start": 97.149,
-   "end": 102.227
+   "text": "He didn't just survive. He went back to climbing mountains.",
+   "start": 102.413,
+   "end": 105.831
   },
   {
    "i": 23,
-   "text": "Some rocks are meant to stop you. Others are meant to show you what you're made of.",
-   "start": 102.627,
-   "end": 107.058
+   "text": "He even climbed all of Colorado's fifty-nine tallest peaks... with one arm.",
+   "start": 106.181,
+   "end": 111.258
   },
   {
    "i": 24,
+   "text": "Some rocks are meant to stop you. Others are meant to show you what you're made of.",
+   "start": 111.658,
+   "end": 116.089
+  },
+  {
+   "i": 25,
    "text": "For more unbelievable true stories, follow NEXORA!",
-   "start": 107.558,
-   "end": 110.835
+   "start": 116.589,
+   "end": 119.866
   }
  ]
 }

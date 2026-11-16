@@ -1,0 +1,61 @@
+{
+ "duration": 24.811,
+ "voice": "am_michael",
+ "speed": 1.08,
+ "lines": [
+  {
+   "i": 0,
+   "text": "Ever wonder where your money actually goes?",
+   "start": 0.25,
+   "end": 2.397
+  },
+  {
+   "i": 1,
+   "text": "You work forty hours feeling like an absolute boss,",
+   "start": 2.557,
+   "end": 5.607
+  },
+  {
+   "i": 2,
+   "text": "and you strut into the store ready to spend.",
+   "start": 5.997,
+   "end": 8.044
+  },
+  {
+   "i": 3,
+   "text": "You reach into your pocket, pull out your leather wallet,",
+   "start": 8.204,
+   "end": 10.814
+  },
+  {
+   "i": 4,
+   "text": "flip it wide open,",
+   "start": 11.194,
+   "end": 12.314
+  },
+  {
+   "i": 5,
+   "text": "and there is nothing inside except a solitary spiderweb.",
+   "start": 12.834,
+   "end": 16.209
+  },
+  {
+   "i": 6,
+   "text": "And before you can even blink,",
+   "start": 16.369,
+   "end": 17.829
+  },
+  {
+   "i": 7,
+   "text": "your last dollar bill sprouts wings and flies away forever.",
+   "start": 18.279,
+   "end": 21.617
+  },
+  {
+   "i": 8,
+   "text": "Leaving you broke until next payday.",
+   "start": 21.777,
+   "end": 23.761
+  }
+ ]
+}
