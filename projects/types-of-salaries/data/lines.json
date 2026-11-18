@@ -1,0 +1,77 @@
+{
+ "duration": 50.435,
+ "voice": "am_michael",
+ "speed": 1.02,
+ "lines": [
+  {
+   "i": 0,
+   "text": "Hey Arthur! What kind of salary can I expect here?",
+   "start": 0.35,
+   "end": 2.841,
+   "voice": "am_puck"
+  },
+  {
+   "i": 1,
+   "text": "Ah rookie... in corporate life, there are six types of salaries.",
+   "start": 3.241,
+   "end": 7.017,
+   "voice": "am_michael"
+  },
+  {
+   "i": 2,
+   "text": "Number one: The Onion Salary. The moment you touch it, you start crying!",
+   "start": 7.517,
+   "end": 11.799,
+   "voice": "am_michael"
+  },
+  {
+   "i": 3,
+   "text": "Number two: The Damned Salary. It doesn't help you, it makes you suffer... but you can't live without it!",
+   "start": 12.599,
+   "end": 18.389,
+   "voice": "am_michael"
+  },
+  {
+   "i": 4,
+   "text": "Number three: The Agnostic Salary. You constantly doubt whether it actually exists.",
+   "start": 19.188,
+   "end": 24.684,
+   "voice": "am_michael"
+  },
+  {
+   "i": 5,
+   "text": "Number four: The Magic Salary. Now you see it... and now you don't!",
+   "start": 25.484,
+   "end": 29.343,
+   "voice": "am_michael"
+  },
+  {
+   "i": 6,
+   "text": "Number five: The Period Salary. Comes once a month... and lasts for four days!",
+   "start": 30.143,
+   "end": 35.085,
+   "voice": "am_michael"
+  },
+  {
+   "i": 7,
+   "text": "And number six: The Impotent Salary. When you need it the most... it completely lets you down!",
+   "start": 35.886,
+   "end": 41.354,
+   "voice": "am_michael"
+  },
+  {
+   "i": 8,
+   "text": "Wait... which one do we get?!",
+   "start": 42.204,
+   "end": 43.455,
+   "voice": "am_puck"
+  },
+  {
+   "i": 9,
+   "text": "All six, buddy. All six.",
+   "start": 44.055,
+   "end": 46.035,
+   "voice": "am_michael"
+  }
+ ]
+}

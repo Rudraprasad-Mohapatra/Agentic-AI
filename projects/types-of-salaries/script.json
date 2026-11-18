@@ -1,0 +1,79 @@
+{
+  "voice": "am_michael",
+  "speed": 1.02,
+  "lead": 0.35,
+  "outro": 0.60,
+  "music": "bounce",
+  "lines": [
+    {
+      "text": "Hey Arthur! What kind of salary can I expect here?",
+      "caps": "Hey Arthur! | What kind of salary | can I expect here?",
+      "voice": "am_puck",
+      "speed": 1.02,
+      "gap": 0.40
+    },
+    {
+      "text": "Ah rookie... in corporate life, there are six types of salaries.",
+      "caps": "Ah rookie... | in corporate life, | there are 6 types of salaries.",
+      "voice": "am_michael",
+      "speed": 1.0,
+      "gap": 0.50
+    },
+    {
+      "text": "Number one: The Onion Salary. The moment you touch it, you start crying!",
+      "caps": "1. THE ONION SALARY 🧅 | The moment you touch it, | you start crying!",
+      "voice": "am_michael",
+      "speed": 1.02,
+      "gap": 0.80
+    },
+    {
+      "text": "Number two: The Damned Salary. It doesn't help you, it makes you suffer... but you can't live without it!",
+      "caps": "2. THE DAMNED SALARY 🔥 | It makes you suffer... | but you CANNOT | live without it!",
+      "voice": "am_michael",
+      "speed": 1.02,
+      "gap": 0.80
+    },
+    {
+      "text": "Number three: The Agnostic Salary. You constantly doubt whether it actually exists.",
+      "caps": "3. THE AGNOSTIC SALARY 🕵️‍♂️ | You constantly DOUBT | whether it actually exists!",
+      "voice": "am_michael",
+      "speed": 1.0,
+      "gap": 0.80
+    },
+    {
+      "text": "Number four: The Magic Salary. Now you see it... and now you don't!",
+      "caps": "4. THE MAGIC SALARY 🎩✨ | Now you see it... | and NOW YOU DON'T!",
+      "voice": "am_michael",
+      "speed": 1.02,
+      "gap": 0.80
+    },
+    {
+      "text": "Number five: The Period Salary. Comes once a month... and lasts for four days!",
+      "caps": "5. THE PERIOD SALARY 📅 | Comes once a month... | and lasts for 4 days!",
+      "voice": "am_michael",
+      "speed": 1.02,
+      "gap": 0.80
+    },
+    {
+      "text": "And number six: The Impotent Salary. When you need it the most... it completely lets you down!",
+      "caps": "6. THE IMPOTENT SALARY 📉 | When you need it the most... | it COMPLETELY | lets you down!",
+      "voice": "am_michael",
+      "speed": 1.0,
+      "gap": 0.85
+    },
+    {
+      "text": "Wait... which one do we get?!",
+      "caps": "Wait... | which one do WE get?!",
+      "voice": "am_puck",
+      "speed": 1.05,
+      "gap": 0.60
+    },
+    {
+      "text": "All six, buddy. All six.",
+      "caps": "All six, buddy. | ALL SIX. 💀",
+      "voice": "am_michael",
+      "speed": 0.85,
+      "gap": 3.80
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+ "duration": 41.962,
+ "voice": "am_michael",
+ "speed": 1.04,
+ "lines": [
+  {
+   "i": 0,
+   "text": "Never demand a six-figure salary with zero experience.",
+   "start": 0.35,
+   "end": 3.943,
+   "voice": "am_michael"
+  },
+  {
+   "i": 1,
+   "text": "So... fresh out of college, what starting salary are you looking for?",
+   "start": 4.443,
+   "end": 8.537,
+   "voice": "am_michael"
+  },
+  {
+   "i": 2,
+   "text": "Well... in the region of a hundred and twenty-five thousand a year. Depending on the benefits, of course.",
+   "start": 9.087,
+   "end": 14.362,
+   "voice": "am_puck"
+  },
+  {
+   "i": 3,
+   "text": "I see. And what would you say to five weeks paid vacation, full medical, and dental,",
+   "start": 14.962,
+   "end": 20.682,
+   "voice": "am_michael"
+  },
+  {
+   "i": 4,
+   "text": "a fifty percent retirement match, and a brand new company car every two years?",
+   "start": 21.122,
+   "end": 26.335,
+   "voice": "am_michael"
+  },
+  {
+   "i": 5,
+   "text": "Say... a shiny red Corvette?",
+   "start": 26.685,
+   "end": 28.329,
+   "voice": "am_michael"
+  },
+  {
+   "i": 6,
+   "text": "Wait... Wow...",
+   "start": 29.679,
+   "end": 31.061,
+   "voice": "am_puck"
+  },
+  {
+   "i": 7,
+   "text": "Are you kidding me?!",
+   "start": 31.411,
+   "end": 32.394,
+   "voice": "am_puck"
+  },
+  {
+   "i": 8,
+   "text": "Yeah. But you started it.",
+   "start": 33.244,
+   "end": 34.537,
+   "voice": "am_michael"
+  },
+  {
+   "i": 9,
+   "text": "Anyway... thank you for coming in. We'll keep your resume on file.",
+   "start": 35.437,
+   "end": 39.362,
+   "voice": "am_michael"
+  }
+ ]
+}

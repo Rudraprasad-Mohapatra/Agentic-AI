@@ -1,0 +1,133 @@
+{
+ "duration": 56.059,
+ "voice": "am_michael",
+ "speed": 1.05,
+ "lines": [
+  {
+   "i": 0,
+   "text": "Welcome! Your resume is phenomenal. But tell me... do you notice anything unusual about me?",
+   "start": 0.35,
+   "end": 5.881,
+   "voice": "am_michael"
+  },
+  {
+   "i": 1,
+   "text": "Uh... yeah man... you don't have any EARS!",
+   "start": 6.181,
+   "end": 8.172,
+   "voice": "am_onyx"
+  },
+  {
+   "i": 2,
+   "text": "I am VERY sensitive about my ears! Get the hell out of my office!",
+   "start": 8.472,
+   "end": 12.38,
+   "voice": "am_michael"
+  },
+  {
+   "i": 3,
+   "text": "So we agree on the twenty thousand dollar bonus?",
+   "start": 12.88,
+   "end": 15.234,
+   "voice": "am_fenrir"
+  },
+  {
+   "i": 4,
+   "text": "Deal! One last question... do you notice anything strange about my face?",
+   "start": 15.484,
+   "end": 19.776,
+   "voice": "am_michael"
+  },
+  {
+   "i": 5,
+   "text": "Dude... where are your EARS?!",
+   "start": 20.076,
+   "end": 21.216,
+   "voice": "am_fenrir"
+  },
+  {
+   "i": 6,
+   "text": "OUT! GET OUT!!",
+   "start": 21.466,
+   "end": 22.203,
+   "voice": "am_michael"
+  },
+  {
+   "i": 7,
+   "text": "Bro! Whatever you do, DO NOT mention his ears! He'll throw you right out!",
+   "start": 22.703,
+   "end": 26.271,
+   "voice": "am_fenrir"
+  },
+  {
+   "i": 8,
+   "text": "Relax guys. Watch a master at work.",
+   "start": 26.571,
+   "end": 28.507,
+   "voice": "am_puck"
+  },
+  {
+   "i": 9,
+   "text": "Flawless interview! Now tell me... do you notice anything unusual about me?",
+   "start": 28.957,
+   "end": 33.581,
+   "voice": "am_michael"
+  },
+  {
+   "i": 10,
+   "text": "Hmm... let me see...",
+   "start": 33.981,
+   "end": 35.229,
+   "voice": "am_puck"
+  },
+  {
+   "i": 11,
+   "text": "Yeah... You wear contact lenses, don't you?",
+   "start": 36.579,
+   "end": 38.463,
+   "voice": "am_puck"
+  },
+  {
+   "i": 12,
+   "text": "WAIT... WHAT?! WOW!! That is brilliant! How on earth did you know?!",
+   "start": 38.813,
+   "end": 42.364,
+   "voice": "am_michael"
+  },
+  {
+   "i": 13,
+   "text": "Well... that's simple Mr. Sterling...",
+   "start": 42.764,
+   "end": 44.722,
+   "voice": "am_puck"
+  },
+  {
+   "i": 14,
+   "text": "You sure as hell couldn't wear glasses!",
+   "start": 45.072,
+   "end": 46.786,
+   "voice": "am_puck"
+  },
+  {
+   "i": 15,
+   "text": "So... do I still get the job?",
+   "start": 47.636,
+   "end": 49.121,
+   "voice": "am_puck"
+  },
+  {
+   "i": 16,
+   "text": "SECURITYYYYY!!",
+   "start": 49.521,
+   "end": 50.456,
+   "voice": "am_michael"
+  },
+  {
+   "i": 17,
+   "text": "Follow Nexora for more hilarious comedy!",
+   "start": 51.256,
+   "end": 53.659,
+   "voice": "af_heart"
+  }
+ ]
+}

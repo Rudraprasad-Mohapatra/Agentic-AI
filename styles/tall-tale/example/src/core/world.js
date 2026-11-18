@@ -61,6 +61,56 @@ export const T = {
     for (let i = 0; i < 5000; i++) { const x = rnd(i * 1.3) * w, y = rnd(i * 2.9) * h; g.strokeStyle = shade(col, 0.7 + rnd(i * 7.7) * 0.6); g.lineWidth = 2; g.beginPath(); g.moveTo(x, y); g.lineTo(x + (rnd(i) - 0.5) * 6, y - 6 - rnd(i * 9) * 8); g.stroke(); }
   }, rep),
   felt: (col = '#1F5A45') => canvasTex('felt' + col, 256, 256, (g, w, h) => { g.fillStyle = col; g.fillRect(0, 0, w, h); for (let i = 0; i < 3000; i++) { g.fillStyle = shade(col, 0.85 + rnd(i) * 0.3); g.fillRect(rnd(i * 3) * w, rnd(i * 7) * h, 2, 2); } }),
+  slats: (wood = '#3D2817', felt = '#141419', rep = [1, 1]) => canvasTex('slats' + wood + felt, 256, 256, (g, w, h) => {
+    g.fillStyle = felt; g.fillRect(0, 0, w, h);
+    const slatW = 18, gapW = 14;
+    for (let x = 0; x < w; x += slatW + gapW) {
+      g.fillStyle = wood; g.fillRect(x, 0, slatW, h);
+      g.fillStyle = shade(wood, 1.25); g.fillRect(x, 0, 2, h);
+      g.fillStyle = shade(wood, 0.65); g.fillRect(x + slatW - 2, 0, 2, h);
+    }
+  }, rep),
+  executiveTile: (base = '#22252D', rep = [1, 1]) => canvasTex('exTile' + base, 512, 512, (g, w, h) => {
+    g.fillStyle = base; g.fillRect(0, 0, w, h);
+    g.strokeStyle = shade(base, 0.65); g.lineWidth = 4;
+    g.strokeRect(0, 0, w, h);
+    g.strokeRect(w / 2, 0, w / 2, h);
+    g.strokeRect(0, h / 2, w, h / 2);
+    g.strokeStyle = shade(base, 1.4); g.globalAlpha = 0.16; g.lineWidth = 3;
+    for (let i = 0; i < 7; i++) {
+      g.beginPath(); g.moveTo(rnd(i * 1.7) * w, 0); g.bezierCurveTo(rnd(i * 2.3) * w, h * 0.4, rnd(i * 3.1) * w, h * 0.7, rnd(i * 4.7) * w, h); g.stroke();
+    }
+    g.globalAlpha = 1;
+  }, rep),
+  skyline: () => canvasTex('skyline_tex', 1024, 512, (g, w, h) => {
+    const gr = g.createLinearGradient(0, 0, 0, h);
+    gr.addColorStop(0, '#4F7FA8');
+    gr.addColorStop(0.55, '#8CB5D8');
+    gr.addColorStop(0.85, '#D5E5F2');
+    gr.addColorStop(1.0, '#E8EFF5');
+    g.fillStyle = gr; g.fillRect(0, 0, w, h);
+    g.fillStyle = '#7A9CB8';
+    for (let i = 0; i < 20; i++) {
+      const tw = 40 + rnd(i * 5) * 50, th = 140 + rnd(i * 7) * 180, tx = i * 56 - 20;
+      g.fillRect(tx, h - th, tw, th);
+    }
+    const colors = ['#2C3946', '#232E38', '#344554', '#283540', '#1F2933'];
+    for (let i = 0; i < 16; i++) {
+      const tw = 65 + rnd(i * 11) * 60, th = 180 + rnd(i * 13) * 260, tx = i * 72 - 30;
+      g.fillStyle = colors[i % colors.length];
+      g.fillRect(tx, h - th, tw, th);
+      if (i % 3 === 0) {
+        g.beginPath(); g.moveTo(tx, h - th); g.lineTo(tx + tw / 2, h - th - 35); g.lineTo(tx + tw, h - th); g.fill();
+      }
+      g.fillStyle = '#D6EAF8'; g.globalAlpha = 0.45;
+      for (let wy = h - th + 20; wy < h - 20; wy += 14) {
+        for (let wx = tx + 8; wx < tx + tw - 8; wx += 12) {
+          if (rnd(wx * 3 + wy) > 0.3) g.fillRect(wx, wy, 6, 8);
+        }
+      }
+      g.globalAlpha = 1;
+    }
+  }),
 };
 
 /** a painted shopfront (front face of a building) */
@@ -305,6 +355,139 @@ export function interior(E, { w = 8, depth = 7, h = 4.2, wall = '#9E2E3A', motif
   for (let i = 0; i < 140; i++) { e.set(-Math.PI / 2, 0, rnd(i * 3) * 6.3); q.setFromEuler(e); m4.compose(new THREE.Vector3((rnd(i) - 0.5) * (w - 1), 0.005 + i * 0.00005, -rnd(i * 7) * depth + 0.8), q, new THREE.Vector3(1, 1, 1)); slips.setMatrixAt(i, m4); slips.setColorAt(i, new THREE.Color(['#F2E6CF', '#E9D7A5', '#F4C7B0', '#CFE3D0'][i % 4])); }
   slips.receiveShadow = true; if (litter) scene.add(slips);
   return { scene, sun: { key: sun }, counter, window: viewPlane, w, depth, h };
+}
+
+/**
+ * Modern High-Rise Corporate Executive Chamber / Boardroom
+ * - Panoramic skyscraper skyline visible through floor-to-ceiling glass wall
+ * - Sleek acoustic dark walnut wood slat paneling
+ * - Polished dark Italian terrazzo/marble flooring with specular sheen
+ * - Architectural recessed LED lighting
+ */
+export function corporateSuite(E, { w = 9.5, depth = 8, h = 4.2 } = {}) {
+  const scene = new THREE.Scene();
+  scene.background = new THREE.Color('#101318');
+  scene.environment = E.envMap;
+  scene.environmentIntensity = 0.55;
+
+  // 1. Polished Executive Flooring
+  const fl = new THREE.Mesh(
+    new THREE.PlaneGeometry(w, depth + 2),
+    mat({ map: T.executiveTile('#1E222A', [w / 2.2, (depth + 2) / 2.2]), roughness: 0.25, metalness: 0.15 })
+  );
+  fl.rotation.x = -Math.PI / 2;
+  fl.position.z = -depth / 2 + 1;
+  fl.receiveShadow = true;
+  scene.add(fl);
+
+  // 2. Side Walls: Luxury Walnut Acoustic Slats
+  const slatMat = mat({ map: T.slats('#3D2817', '#151419', [(depth + 2) / 1.6, h / 1.6]), roughness: 0.7 });
+  [-1, 1].forEach((s) => {
+    box(0.18, h, depth + 2, slatMat, s * (w / 2), h / 2, -depth / 2 + 1, scene);
+  });
+
+  // 3. Drop Ceiling with Architectural LED Channels
+  const ceilMat = mat({ color: '#181C22', roughness: 0.9 });
+  box(w, 0.18, depth + 2, ceilMat, 0, h + 0.09, -depth / 2 + 1, scene);
+  // Recessed warm LED linear strip in ceiling
+  const ledMat = mat({ color: '#78736B', roughness: 0.8 });
+  box(w * 0.7, 0.04, 0.14, ledMat, 0, h - 0.01, -depth / 2 + 1, scene);
+
+  // 4. Panoramic Floor-to-Ceiling Glass Wall at the back (z = -depth + 0.8)
+  const windowZ = -depth + 0.8;
+  const glassW = w - 0.4, glassH = h - 0.4;
+  const glassMat = new THREE.MeshStandardMaterial({
+    color: '#6A8CA8',
+    roughness: 0.15,
+    metalness: 0.6,
+    transparent: true,
+    opacity: 0.22
+  });
+  const glassPane = new THREE.Mesh(new THREE.PlaneGeometry(glassW, glassH), glassMat);
+  glassPane.position.set(0, h / 2, windowZ);
+  scene.add(glassPane);
+
+  // Architectural black aluminum mullions (window frames)
+  const mullionMat = mat({ color: '#111216', roughness: 0.35, metalness: 0.8 });
+  box(glassW, 0.12, 0.15, mullionMat, 0, 0.1, windowZ, scene);
+  box(glassW, 0.12, 0.15, mullionMat, 0, glassH + 0.1, windowZ, scene);
+  [-1, 1].forEach((s) => box(0.12, glassH, 0.15, mullionMat, s * (glassW / 2), h / 2, windowZ, scene));
+  [-glassW / 3, glassW / 3].forEach((x) => {
+    box(0.08, glassH, 0.15, mullionMat, x, h / 2, windowZ, scene);
+  });
+  box(glassW, 0.08, 0.15, mullionMat, 0, h * 0.72, windowZ, scene);
+
+  // 5. Skyline Backdrop (outside the window)
+  const skyPlane = new THREE.Mesh(
+    new THREE.PlaneGeometry(glassW * 1.8, glassH * 1.6),
+    new THREE.MeshBasicMaterial({ map: T.skyline() })
+  );
+  skyPlane.position.set(0, h / 2 + 0.4, windowZ - 4.5);
+  scene.add(skyPlane);
+
+  // 6. Modern Executive Sideboard / Credenza against left wall
+  const credWood = mat({ color: '#2C1B10', roughness: 0.4 });
+  box(0.65, 0.85, 3.2, credWood, -w / 2 + 0.45, 0.425, -1.2, scene);
+  box(0.02, 0.12, 0.02, mat({ color: '#D4AF37', metalness: 0.8, roughness: 0.2 }), -w / 2 + 0.79, 0.55, -0.6, scene);
+  box(0.02, 0.12, 0.02, mat({ color: '#D4AF37', metalness: 0.8, roughness: 0.2 }), -w / 2 + 0.79, 0.55, -1.8, scene);
+
+  // 7. Architectural Indoor Plant (Fiddle-leaf fig in modern white cylinder)
+  const planterMat = mat({ color: '#F4F4F6', roughness: 0.25 });
+  const plantGrp = new THREE.Group();
+  plantGrp.position.set(w / 2 - 0.85, 0, windowZ + 1.1);
+  cyl(0.32, 0.32, 0.7, planterMat, 0, 0.35, 0, plantGrp, 24);
+  cyl(0.30, 0.30, 0.05, mat({ color: '#1B140D' }), 0, 0.68, 0, plantGrp, 16);
+  const leafMat = mat({ color: '#2D6A4F', roughness: 0.6 });
+  cyl(0.025, 0.035, 1.4, mat({ color: '#3A2E26' }), 0, 1.1, 0, plantGrp, 8);
+  for (let i = 0; i < 9; i++) {
+    const a = i * 1.35;
+    const ly = 0.8 + i * 0.14;
+    const leaf = new THREE.Mesh(new THREE.PlaneGeometry(0.38, 0.52), leafMat);
+    leaf.position.set(Math.cos(a) * 0.28, ly, Math.sin(a) * 0.28);
+    leaf.rotation.set(0.35, a, 0.4);
+    plantGrp.add(leaf);
+  }
+  scene.add(plantGrp);
+
+  // 8. Front Wall at z = 3.6 (Acoustic slats & Modern Framed Art)
+  const frontZ = 3.6;
+  const frontWallMat = mat({ map: T.slats('#3D2817', '#151419', [w / 1.6, h / 1.6]), roughness: 0.7 });
+  box(w, h, 0.18, frontWallMat, 0, h / 2, frontZ, scene);
+  const artTex = canvasTex('corp_art_tex', 512, 384, (c, cw, ch) => {
+    c.fillStyle = '#E8ECEF'; c.fillRect(0, 0, cw, ch);
+    c.fillStyle = '#2B5EAA'; c.beginPath(); c.arc(cw * 0.35, ch * 0.45, 110, 0, Math.PI * 2); c.fill();
+    c.fillStyle = '#D8343F'; c.fillRect(cw * 0.45, ch * 0.2, 140, 160);
+    c.fillStyle = '#E8C040'; c.beginPath(); c.moveTo(cw * 0.2, ch * 0.75); c.lineTo(cw * 0.7, ch * 0.85); c.lineTo(cw * 0.4, ch * 0.3); c.fill();
+    c.strokeStyle = '#1A1A24'; c.lineWidth = 14; c.strokeRect(6, 6, cw - 12, ch - 12);
+  });
+  const artFrame = new THREE.Mesh(new THREE.PlaneGeometry(2.4, 1.8), new THREE.MeshBasicMaterial({ map: artTex }));
+  artFrame.position.set(0, h * 0.55, frontZ - 0.1);
+  artFrame.rotation.y = Math.PI;
+  scene.add(artFrame);
+
+  // Front warm fill light (soft, balanced, no glare)
+  const frontLight = new THREE.PointLight('#FFEEDB', 1.5, 9, 1.4);
+  frontLight.position.set(0, h - 0.5, 2.2);
+  scene.add(frontLight);
+
+  // 9. Lighting Rig (cinematic, warm key, no harsh overexposure)
+  const sun = new THREE.DirectionalLight('#D8EDFF', 1.2);
+  sun.position.set(-2, 5, windowZ - 5);
+  sun.target.position.set(0, 1, 0);
+  sun.castShadow = true;
+  sun.shadow.mapSize.set(2048, 2048);
+  Object.assign(sun.shadow.camera, { left: -7, right: 7, top: 7, bottom: -7, near: 0.5, far: 25 });
+  sun.shadow.bias = -0.0005;
+  scene.add(sun, sun.target);
+
+  const keyLight = new THREE.PointLight('#FFF1E0', 2.0, 12, 1.3);
+  keyLight.position.set(0, h - 0.5, 0.5);
+  keyLight.castShadow = true;
+  scene.add(keyLight);
+
+  scene.add(new THREE.HemisphereLight('#DCEAF6', '#221A15', 0.85));
+
+  return { scene, sun, w, depth, h, windowZ };
 }
 
 /** grass, hills, a fence, trees, flowers. sunset: true = pink/orange evening */

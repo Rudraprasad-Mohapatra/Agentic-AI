@@ -1,0 +1,94 @@
+{
+  "title": "The Red Corvette Job Interview",
+  "voice": "am_michael",
+  "speed": 1.04,
+  "lead": 0.35,
+  "outro": 1.40,
+  "gap": 0.35,
+  "music": "bounce",
+  "sources": [
+    "Classic Corporate Comedy"
+  ],
+  "lines": [
+    {
+      "speaker": "narrator",
+      "voice": "am_michael",
+      "speed": 1.08,
+      "text": "Never demand a six-figure salary with zero experience.",
+      "caps": "Never demand a *six-figure salary... | with *ZERO experience.",
+      "gap": 0.50
+    },
+    {
+      "speaker": "manager",
+      "voice": "am_michael",
+      "speed": 0.98,
+      "text": "So... fresh out of college, what starting salary are you looking for?",
+      "caps": "So... fresh out of college, | what *starting salary | are you looking for?",
+      "gap": 0.55
+    },
+    {
+      "speaker": "candidate",
+      "voice": "am_puck",
+      "speed": 1.02,
+      "text": "Well... in the region of a hundred and twenty-five thousand a year. Depending on the benefits, of course.",
+      "caps": "In the region of | *$125,000 a year... | depending on benefits.",
+      "gap": 0.60
+    },
+    {
+      "speaker": "manager",
+      "voice": "am_michael",
+      "speed": 0.98,
+      "text": "I see. And what would you say to five weeks paid vacation, full medical, and dental,",
+      "caps": "I see. | What about | *5 weeks vacation, | full medical and dental,",
+      "gap": 0.25
+    },
+    {
+      "speaker": "manager",
+      "voice": "am_michael",
+      "speed": 0.98,
+      "text": "a fifty percent retirement match, and a brand new company car every two years?",
+      "caps": "50% retirement match, | and a brand new | *company car every two years?",
+      "gap": 0.35
+    },
+    {
+      "speaker": "manager",
+      "voice": "am_michael",
+      "speed": 0.96,
+      "text": "Say... a shiny red Corvette?",
+      "caps": "Say... | a shiny | *red Corvette?",
+      "gap": 1.35
+    },
+    {
+      "speaker": "candidate",
+      "voice": "am_puck",
+      "speed": 0.68,
+      "text": "Wait... Wow...",
+      "caps": "Wait... | *WOW...",
+      "gap": 0.35
+    },
+    {
+      "speaker": "candidate",
+      "voice": "am_puck",
+      "speed": 0.95,
+      "text": "Are you kidding me?!",
+      "caps": "Are you *kidding me?!",
+      "gap": 0.85
+    },
+    {
+      "speaker": "manager",
+      "voice": "am_michael",
+      "speed": 0.94,
+      "text": "Yeah. But you started it.",
+      "caps": "Yeah. | But *you started it.",
+      "gap": 0.90
+    },
+    {
+      "speaker": "manager",
+      "voice": "am_michael",
+      "speed": 0.98,
+      "text": "Anyway... thank you for coming in. We'll keep your resume on file.",
+      "caps": "Anyway... | thank you for coming in. | We'll keep your *resume on file.",
+      "gap": 1.20
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "voice": "am_michael",
+  "speed": 1.05,
+  "lead": 0.35,
+  "outro": 1.20,
+  "music": "bounce",
+  "lines": [
+    {
+      "text": "Welcome! Your resume is phenomenal. But tell me... do you notice anything unusual about me?",
+      "caps": "Welcome! Your resume is phenomenal. | But tell me... | do you notice anything | unusual about me?",
+      "voice": "am_michael",
+      "speed": 1.08,
+      "gap": 0.30
+    },
+    {
+      "text": "Uh... yeah man... you don't have any EARS!",
+      "caps": "Uh... yeah man... | you don't have | any EARS!",
+      "voice": "am_onyx",
+      "speed": 1.08,
+      "gap": 0.30
+    },
+    {
+      "text": "I am VERY sensitive about my ears! Get the hell out of my office!",
+      "caps": "I am VERY sensitive | about my ears! | Get the hell OUT | of my office!",
+      "voice": "am_michael",
+      "speed": 1.15,
+      "gap": 0.50
+    },
+    {
+      "text": "So we agree on the twenty thousand dollar bonus?",
+      "caps": "So we agree on | the $20,000 bonus?",
+      "voice": "am_fenrir",
+      "speed": 1.10,
+      "gap": 0.25
+    },
+    {
+      "text": "Deal! One last question... do you notice anything strange about my face?",
+      "caps": "Deal! One last question... | do you notice anything | strange about my face?",
+      "voice": "am_michael",
+      "speed": 1.08,
+      "gap": 0.30
+    },
+    {
+      "text": "Dude... where are your EARS?!",
+      "caps": "Dude... | where are your EARS?!",
+      "voice": "am_fenrir",
+      "speed": 1.12,
+      "gap": 0.25
+    },
+    {
+      "text": "OUT! GET OUT!!",
+      "caps": "OUT! | GET OUT!!",
+      "voice": "am_michael",
+      "speed": 1.25,
+      "gap": 0.50
+    },
+    {
+      "text": "Bro! Whatever you do, DO NOT mention his ears! He'll throw you right out!",
+      "caps": "Bro! Whatever you do, | DO NOT mention his ears! | He'll throw you RIGHT OUT!",
+      "voice": "am_fenrir",
+      "speed": 1.12,
+      "gap": 0.30
+    },
+    {
+      "text": "Relax guys. Watch a master at work.",
+      "caps": "Relax guys. | Watch a master at work.",
+      "voice": "am_puck",
+      "speed": 1.05,
+      "gap": 0.45
+    },
+    {
+      "text": "Flawless interview! Now tell me... do you notice anything unusual about me?",
+      "caps": "Flawless interview! | Now tell me... | do you notice anything | unusual about me?",
+      "voice": "am_michael",
+      "speed": 1.05,
+      "gap": 0.40
+    },
+    {
+      "text": "Hmm... let me see...",
+      "caps": "Hmm... | let me see...",
+      "voice": "am_puck",
+      "speed": 0.85,
+      "gap": 1.35
+    },
+    {
+      "text": "Yeah... You wear contact lenses, don't you?",
+      "caps": "Yeah... | You wear contact lenses, | don't you?",
+      "voice": "am_puck",
+      "speed": 0.98,
+      "gap": 0.35
+    },
+    {
+      "text": "WAIT... WHAT?! WOW!! That is brilliant! How on earth did you know?!",
+      "caps": "WAIT... WHAT?! WOW!! | That is BRILLIANT! | How on earth | did you know?!",
+      "voice": "am_michael",
+      "speed": 0.95,
+      "gap": 0.40
+    },
+    {
+      "text": "Well... that's simple Mr. Sterling...",
+      "caps": "Well... that's simple | Mr. Sterling...",
+      "voice": "am_puck",
+      "speed": 0.85,
+      "gap": 0.35
+    },
+    {
+      "text": "You sure as hell couldn't wear glasses!",
+      "caps": "You sure as hell | couldn't wear glasses!",
+      "voice": "am_puck",
+      "speed": 0.95,
+      "gap": 0.85
+    },
+    {
+      "text": "So... do I still get the job?",
+      "caps": "So... | do I still get the job?",
+      "voice": "am_puck",
+      "speed": 1.0,
+      "gap": 0.40
+    },
+    {
+      "text": "SECURITYYYYY!!",
+      "caps": "SECURITYYYYY!!",
+      "voice": "am_michael",
+      "speed": 1.20,
+      "gap": 0.80
+    },
+    {
+      "text": "Follow Nexora for more hilarious comedy!",
+      "caps": "Follow Nexora | for more hilarious comedy!",
+      "voice": "af_heart",
+      "speed": 1.08,
+      "gap": 1.20
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+ "duration": 41.962,
+ "cues": [
+  {
+   "t": 2,
+   "type": "slam"
+  },
+  {
+   "t": 11.2,
+   "type": "ding"
+  },
+  {
+   "t": 26.65,
+   "type": "slide"
+  },
+  {
+   "t": 28.35,
+   "type": "pop"
+  },
+  {
+   "t": 28.6,
+   "type": "pop"
+  },
+  {
+   "t": 28.85,
+   "type": "pop"
+  },
+  {
+   "t": 29.1,
+   "type": "pop"
+  },
+  {
+   "t": 29.35,
+   "type": "ding"
+  },
+  {
+   "t": 29.65,
+   "type": "sparkle"
+  },
+  {
+   "t": 31.1,
+   "type": "whoosh"
+  },
+  {
+   "t": 33.24,
+   "type": "music_cut",
+   "dur": 4.8
+  },
+  {
+   "t": 34.6,
+   "type": "pop"
+  },
+  {
+   "t": 34.65,
+   "type": "tock"
+  },
+  {
+   "t": 34.7,
+   "type": "shatter"
+  },
+  {
+   "t": 35.9,
+   "type": "snap"
+  },
+  {
+   "t": 36.6,
+   "type": "slide"
+  },
+  {
+   "t": 37.5,
+   "type": "plop"
+  }
+ ]
+}

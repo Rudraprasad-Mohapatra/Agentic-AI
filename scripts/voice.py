@@ -74,21 +74,28 @@ def main():
     if not a.project: ap.error('project folder missing')
     from kokoro_onnx import Kokoro
     P = Path(a.project); S = json.loads((P / 'script.json').read_text())
-    voice = a.voice or S.get('voice', 'am_michael'); speed = a.speed or S.get('speed', 1.0)
+    default_voice = a.voice or S.get('voice', 'am_michael'); default_speed = a.speed or S.get('speed', 1.0)
     k = Kokoro(str(KDIR / 'kokoro-v1.0.onnx'), str(KDIR / 'voices-v1.0.bin'))
-    lang = 'en-gb' if voice.startswith('b') else 'en-us'
-    say = lambda text: trim(np.asarray(k.create(text, voice=voice, speed=speed, lang=lang)[0], dtype=np.float64))
-    # group the lines into whole sentences (a line ending in . ? ! closes one; "break": true forces a close)
+    def say(text, v=None, sp=None):
+        v = v or default_voice; sp = sp or default_speed
+        lang = 'en-gb' if v.startswith('b') else 'en-us'
+        return trim(np.asarray(k.create(text, voice=v, speed=sp, lang=lang)[0], dtype=np.float64))
+    # group lines: close sentence on punctuation, "break": true, voice change, or last line
     groups, cur = [], []
     for i, ln in enumerate(S['lines']):
         cur.append(i)
-        if re.search(r'[.?!]["\')]*$', ln['text'].strip()) or ln.get('break') or i == len(S['lines']) - 1: groups.append(cur); cur = []
+        is_last = (i == len(S['lines']) - 1)
+        next_diff_voice = (not is_last and S['lines'][i + 1].get('voice') != ln.get('voice'))
+        if re.search(r'[.?!]["\')]*$', ln['text'].strip()) or ln.get('break') or next_diff_voice or is_last:
+            groups.append(cur); cur = []
     out = [np.zeros(int(S.get('lead', 0.4) * SR))]; t = len(out[0]) / SR; lines = [None] * len(S['lines'])
     for g in groups:
-        x = say(' '.join(S['lines'][i]['text'] for i in g))
+        g_voice = S['lines'][g[0]].get('voice', default_voice)
+        g_speed = float(S['lines'][g[0]].get('speed', default_speed))
+        x = say(' '.join(S['lines'][i]['text'] for i in g), v=g_voice, sp=g_speed)
         cuts = [0.0]
         if len(g) > 1:                                    # find each cut inside the sentence
-            lens = np.array([len(say(S['lines'][i]['text'])) for i in g], dtype=float)
+            lens = np.array([len(say(S['lines'][i]['text'], v=g_voice, sp=g_speed)) for i in g], dtype=float)
             pauses = silences(x)
             for c in np.cumsum(lens)[:-1] / lens.sum() * len(x) / SR:
                 near = [p for p in pauses if abs((p[0] + p[1]) / 2 - c) < 0.4]
@@ -97,8 +104,8 @@ def main():
         n = len(x) / SR
         for j, i in enumerate(g):
             a = 0.0 if j == 0 else cuts[j][1]; b = n if j == len(g) - 1 else cuts[j + 1][0]
-            lines[i] = {'i': i, 'text': S['lines'][i]['text'], 'start': round(t + a, 3), 'end': round(t + b, 3)}
-            print(f'{i:2d} {lines[i]["start"]:6.2f}-{lines[i]["end"]:6.2f}  {S["lines"][i]["text"]}', flush=True)
+            lines[i] = {'i': i, 'text': S['lines'][i]['text'], 'start': round(t + a, 3), 'end': round(t + b, 3), 'voice': g_voice}
+            print(f'{i:2d} [{g_voice:10s}] {lines[i]["start"]:6.2f}-{lines[i]["end"]:6.2f}  {S["lines"][i]["text"]}', flush=True)
         gap = np.zeros(int(float(S['lines'][g[-1]].get('gap', S.get('gap', 0.3))) * SR))
         out += [x, gap]; t += (len(x) + len(gap)) / SR
     outro = np.zeros(int(float(S.get('outro', 0.9)) * SR)); out.append(outro)
@@ -106,8 +113,8 @@ def main():
     (P / 'data').mkdir(exist_ok=True)
     wavfile.write(P / 'data/narration.wav', SR, (y * 32767).astype(np.int16))
     dur = len(y) / SR
-    (P / 'data/lines.json').write_text(json.dumps({'duration': round(dur, 3), 'voice': voice, 'speed': speed, 'lines': lines}, indent=1))
-    print(f'data/narration.wav ({dur:.2f} s, {voice} x{speed}) + data/lines.json. Next: words.py')
+    (P / 'data/lines.json').write_text(json.dumps({'duration': round(dur, 3), 'voice': default_voice, 'speed': default_speed, 'lines': lines}, indent=1))
+    print(f'data/narration.wav ({dur:.2f} s) + data/lines.json. Next: words.py')
 
 
 if __name__ == '__main__':

@@ -1,0 +1,54 @@
+{
+ "duration": 50.435,
+ "cues": [
+  {
+   "t": 3.15,
+   "type": "whoosh"
+  },
+  {
+   "t": 7.5,
+   "type": "ding"
+  },
+  {
+   "t": 10.2,
+   "type": "plop"
+  },
+  {
+   "t": 12.55,
+   "type": "alarm"
+  },
+  {
+   "t": 19.15,
+   "type": "ding"
+  },
+  {
+   "t": 25.4,
+   "type": "pop"
+  },
+  {
+   "t": 30.1,
+   "type": "slide"
+  },
+  {
+   "t": 35.85,
+   "type": "slam"
+  },
+  {
+   "t": 42.15,
+   "type": "gulp"
+  },
+  {
+   "t": 44,
+   "type": "music_cut",
+   "dur": 3
+  },
+  {
+   "t": 46.1,
+   "type": "thud"
+  },
+  {
+   "t": 47,
+   "type": "sparkle"
+  }
+ ]
+}
